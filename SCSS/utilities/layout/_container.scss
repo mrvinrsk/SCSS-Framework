@@ -1,0 +1,12 @@
+@import "breakpoints";
+
+@each $name, $breakpoint in $breakpoints {
+  .container-#{$name} {
+    margin: auto;
+    max-width: $breakpoint;
+  }
+
+  @include media-breakpoint-down($name) {
+    max-width: 100%;
+  }
+}

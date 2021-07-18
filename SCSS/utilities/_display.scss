@@ -1,0 +1,14 @@
+$styles: (
+        none,
+        block,
+        inline-block,
+        flex,
+        inline-flex,
+        grid
+);
+
+@each $name, $display in $styles {
+  .d-#{$name} {
+    display: $display;
+  }
+}
