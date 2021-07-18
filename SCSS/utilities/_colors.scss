@@ -1,0 +1,87 @@
+$main: (
+        "main-lightest": #b5c9f8,
+        "main-lighter": #8baeee,
+        "main-light": #5b91e8,
+        "main": #3373d7,
+        "main-dark": #0d45a3,
+        "main-darker": #043380,
+        "main-darkest": #011e50
+);
+
+$gray: (
+        "white": #FFF,
+        "white-darker": #EEE,
+        "gray-lightest": #d5d5d5,
+        "gray-lighter": #b5b5b5,
+        "gray-light": #909090,
+        "gray": #323232,
+        "gray-dark": #202020,
+        "gray-darker": #151515,
+        "gray-darkest": #101010
+);
+
+$success: (
+        "success-lightest": #5cfa50,
+        "success-lighter": #10d900,
+        "success-light": #0ca800,
+        "success": #0c8700,
+        "success-dark": #0b6800,
+        "success-darker": #055300,
+        "success-darkest": #033800
+);
+
+$error: (
+        "error-lightest": #f19a5e,
+        "error-lighter": #fa8b39,
+        "error-light": #ff7a1b,
+        "error": #ff6b00,
+        "error-dark": #cb5400,
+        "error-darker": #a03e00,
+        "error-darkest": #7b3100
+);
+
+$info: (
+        "info-lightest": #4ff1eb,
+        "info-lighter": #2cefe8,
+        "info-light": #18eae3,
+        "info": #0bbfba,
+        "info-dark": #049793,
+        "info-darker": #02716f,
+        "info-darkest": #026160
+);
+
+$dark: (
+        "dark-lightest": #555555,
+        "dark-lighter": #444444,
+        "dark-light": #333333,
+        "dark": #222222,
+        "dark-darker": #111111,
+        "black": #000,
+);
+
+
+$theme: (
+        $main,
+        $gray,
+        $success,
+        $error,
+        $info,
+        $dark
+);
+
+
+/* Color */
+@mixin eachColor() {
+  @each $colorTheme in $theme {
+    @each $name, $color in $colorTheme {
+      @content($name, $color);
+    }
+  }
+}
+
+
+@include eachColor() using($name, $value) {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
