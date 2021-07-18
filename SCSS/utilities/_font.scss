@@ -10,7 +10,7 @@ $defaultFontColor: #EEE;
   color: $defaultFontColor;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .heading {
   font-family: 'Lato', Arial, serif;
 }
 
@@ -37,6 +37,21 @@ p {
 }
 
 
+/* Weights */
+$weights: (
+        light: 300,
+        regular: 400,
+        bold: 700
+);
+
+@each $name, $weight in $weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+
+/* Colors */
 @include eachColor() using($name, $value) {
   .fc-#{$name} {
     color: $value;
@@ -48,4 +63,25 @@ p {
 .link {
   text-decoration: underline;
   cursor: pointer;
+}
+
+
+/* Headings */
+$headingSizes: (
+        1: 1.25rem,
+        2: 1.5rem,
+        3: 1.75rem,
+        4: 2rem,
+        5: 2.25rem,
+        6: 2.5rem,
+        7: 2.75rem,
+        8: 3rem,
+        9: 4rem,
+        10: 5rem
+);
+
+@each $name, $size in $headingSizes {
+  .heading-#{$name} {
+    font-size: $size;
+  }
 }

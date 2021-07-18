@@ -352,7 +352,7 @@
   color: #EEE;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .heading {
   font-family: "Lato", Arial, serif;
 }
 
@@ -377,6 +377,20 @@ p {
   text-align: justify;
 }
 
+/* Weights */
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Colors */
 .fc-main-lightest {
   color: #b5c9f8;
 }
@@ -555,7 +569,52 @@ p {
   cursor: pointer;
 }
 
+/* Headings */
+.heading-1 {
+  font-size: 1.25rem;
+}
+
+.heading-2 {
+  font-size: 1.5rem;
+}
+
+.heading-3 {
+  font-size: 1.75rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.heading-5 {
+  font-size: 2.25rem;
+}
+
+.heading-6 {
+  font-size: 2.5rem;
+}
+
+.heading-7 {
+  font-size: 2.75rem;
+}
+
+.heading-8 {
+  font-size: 3rem;
+}
+
+.heading-9 {
+  font-size: 4rem;
+}
+
+.heading-10 {
+  font-size: 5rem;
+}
+
 /* BASE & NORMALIZATION */
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;

@@ -3,6 +3,9 @@
 @import "utilities/font";
 
 /* BASE & NORMALIZATION */
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
