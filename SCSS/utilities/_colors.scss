@@ -85,3 +85,62 @@ $theme: (
     background-color: $value;
   }
 }
+
+@function lighter($name, $color: false) {
+  $list: null;
+  //@debug $name;
+
+  @each $colorTheme in $theme {
+    @each $colName, $color in $colorTheme {
+      @if ($colName == $name) {
+        $list: $colorTheme;
+      }
+    }
+  }
+
+  $keys: map-keys($list);
+  $n: index($keys, $name);
+
+  @if not $n {
+    @error "Color '#{$name}' not found in '#{$list}'";
+  }
+
+  $ret: if($n > 1, nth($keys, ($n - 1)), null);
+  @debug $ret;
+
+  @if not $color {
+    @return $ret;
+  } @else {
+    @return map-get($list, $ret);
+  }
+}
+
+@function darker($name, $color: false) {
+  $list: null;
+  //@debug $name;
+
+  @each $colorTheme in $theme {
+    @each $colName, $color in $colorTheme {
+      @if ($colName == $name) {
+        $list: $colorTheme;
+      }
+    }
+  }
+
+  $keys: map-keys($list);
+  $n: index($keys, $name);
+
+  @if not $n {
+    @error "Color '#{$name}' not found in '#{$list}'";
+  }
+
+  $ret: if($n < length($keys), nth($keys, ($n + 1)), null);
+  @debug $ret;
+
+
+  @if not $color {
+    @return $ret;
+  } @else {
+    @return map-get($list, $ret);
+  }
+}

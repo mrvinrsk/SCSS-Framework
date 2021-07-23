@@ -2,14 +2,17 @@
 
 @import "utilities/layout/breakpoints";
 @import "utilities/layout/container";
+@import "utilities/layout/flex";
 
 @import "utilities/colors";
 @import "utilities/borders";
 @import "utilities/spacing";
 @import "utilities/display";
 @import "utilities/font";
+@import "utilities/shadows";
 
 @import "utilities/components/card";
+@import "utilities/components/alert";
 
 /* BASE & NORMALIZATION */
 * {

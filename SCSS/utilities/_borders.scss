@@ -2,6 +2,11 @@
 
 .border {
   border-width: 1px;
+  border-style: solid;
+}
+
+.border.border-dashed, .border-dashed {
+  border-style: dashed;
 }
 
 @include eachColor() using($name, $value) {
@@ -13,7 +18,7 @@
     border-bottom: $value;
   }
 
-  .border-bottom-#{$name} {
+  .border-top-#{$name} {
     border-top-color: $value;
   }
 

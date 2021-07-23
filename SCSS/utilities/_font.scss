@@ -65,6 +65,14 @@ $weights: (
   cursor: pointer;
 }
 
+.fs-underline {
+  text-decoration: underline;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
 
 /* Headings */
 $headingSizes: (

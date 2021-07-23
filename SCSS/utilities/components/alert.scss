@@ -1,0 +1,19 @@
+@import "../colors";
+@import "../borders";
+
+.alert {
+  width: 100%;
+
+  @extend .border;
+  @extend .border-radius-2;
+  padding: .65rem 1.25rem;
+}
+
+@include eachColor() using($name, $color) {
+  .alert-#{$name} {
+    border: 1.5px solid $color;
+
+    background-color: transparentize(lighten($color, 15), .75);
+    color: $color;
+  }
+}

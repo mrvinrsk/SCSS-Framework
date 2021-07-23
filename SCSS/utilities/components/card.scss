@@ -18,12 +18,19 @@
     }
 
     .card__description {
-      @extend .mb-4;
       @extend .fa-justify;
     }
 
     hr {
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      opacity: .325;
+
+      @extend .mt-4;
       @extend .mb-2;
+
+      width: 80%;
     }
   }
 
