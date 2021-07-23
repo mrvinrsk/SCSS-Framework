@@ -1,13 +1,23 @@
 /* IMPORTS */
+
+@import "utilities/layout/breakpoints";
+@import "utilities/layout/container";
+
 @import "utilities/colors";
+@import "utilities/borders";
+@import "utilities/spacing";
+@import "utilities/display";
 @import "utilities/font";
+
+@import "utilities/components/card";
 
 /* BASE & NORMALIZATION */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
+  @extend .bg-dark-darker;
 }

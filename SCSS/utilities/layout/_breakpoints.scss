@@ -143,3 +143,10 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
     }
   }
 }
+
+
+@mixin eachBreakpoint() {
+  @each $name, $value in $breakpoints {
+    @content($name, $value);
+  }
+}

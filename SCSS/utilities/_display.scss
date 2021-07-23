@@ -7,8 +7,16 @@ $styles: (
         grid
 );
 
-@each $name, $display in $styles {
-  .d-#{$name} {
+@each $display in $styles {
+  .d-#{$display} {
     display: $display;
+  }
+
+  @include eachBreakpoint() using($breakpoint, $px) {
+    @include media-breakpoint-up($breakpoint) {
+      .d-#{$breakpoint}-#{$display} {
+        display: $display;
+      }
+    }
   }
 }

@@ -1,0 +1,55 @@
+@import "colors";
+
+.border {
+  border-width: 1px;
+}
+
+@include eachColor() using($name, $value) {
+  .border-#{$name} {
+    border-color: $value;
+  }
+
+  .border-bottom-#{$name} {
+    border-bottom: $value;
+  }
+
+  .border-bottom-#{$name} {
+    border-top-color: $value;
+  }
+
+  .border-left-#{$name} {
+    border-left-color: $value;
+  }
+
+  .border-right-#{$name} {
+    border-right-color: $value;
+  }
+
+  .border-x-#{$name} {
+    border-top-color: $value;
+    border-bottom-color: $value;
+  }
+
+  .border-y-#{$name} {
+    border-left-color: $value;
+    border-right-color: $value;
+  }
+}
+
+
+$radiusSizes: (
+        0: 0,
+        1: 2px,
+        2: 5px,
+        3: 10px,
+        4: 15px,
+        5: 25px,
+        6: 50px,
+        round: 50%
+);
+
+@each $name, $radius in $radiusSizes {
+  .border-radius-#{$name} {
+    border-radius: $radius;
+  }
+}
