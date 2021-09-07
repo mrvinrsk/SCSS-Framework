@@ -107,3 +107,9 @@ function updateObfuscation() {
 if (obfs.length >= 1) {
     updateObfuscation();
 }
+
+
+var redirects = document.getElementsByClassName('redirect');
+for (var o = 0; o < length; o++) {
+    redirects[o].innerHTML = "<a href='#" + o.id + "'>" + redirects[o].innerText + "</a>";
+}
