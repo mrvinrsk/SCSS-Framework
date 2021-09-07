@@ -11,14 +11,26 @@
 @import "utilities/font";
 @import "utilities/shadows";
 
-@import "utilities/components/card";
+@import "utilities/components/accordion";
 @import "utilities/components/alert";
+@import "utilities/components/badge";
+@import "utilities/components/button";
+@import "utilities/components/card";
+@import "utilities/components/diagonal-section";
+@import "utilities/components/dot";
+@import "utilities/components/image-card";
+@import "utilities/components/popup";
+@import "utilities/components/tooltip";
+
+@import "utilities/components/forms/input";
+
 
 /* BASE & NORMALIZATION */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  @extend .fc-white-darker;
 }
 
 html, body {

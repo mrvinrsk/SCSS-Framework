@@ -1,0 +1,83 @@
+@import "../../spacing";
+@import "../../borders";
+@import "../../font";
+
+/* STANDARD */
+.form-input {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+
+  @extend .border-radius-2;
+  @extend .border;
+  @extend .border-gray-dark;
+
+  @extend .bg-gray;
+  @extend .pt-1;
+
+  transition-duration: .225s;
+
+  &:hover {
+    cursor: text;
+  }
+
+  &:hover, &:focus-within {
+    @extend .bg-main-lighter;
+
+    @extend .border-main;
+
+    label {
+      @extend .fc-dark-darker;
+    }
+  }
+
+  label {
+    display: block;
+
+    @extend .fsi-regular;
+    @extend .fc-gray-lighter;
+    @extend .mb-1;
+    @extend .ml-2;
+
+    @extend .fs-underline;
+
+    transition-duration: .225s;
+
+    &:hover {
+      cursor: text;
+    }
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+
+    @extend .fc-main;
+    background-color: transparent;
+
+    @extend .px-2;
+    @extend .pb-1;
+
+    @extend .fsi-large;
+
+    background-clip: padding-box;
+
+    appearance: none; // Fix for safari
+
+    border: none;
+    transition-duration: .225s;
+
+    &:focus {
+      @extend .fc-main-darkest;
+    }
+
+    &::selection {
+      @extend .bg-main-lightest;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}

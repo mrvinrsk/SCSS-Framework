@@ -1,12 +1,25 @@
 {
-  "name": "scf",
+  "name": "@mrvinrsk/upgrade-scss",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "SCSS",
+    "Design",
+    "Framework",
+    "CSS"
+  ],
   "author": "Marvin Roßkothen",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvinrsk/Upgrade_SCSS"
+  },
+  "bugs": {
+    "url": "https://github.com/mrvinrsk/Upgrade_SCSS/issues"
+  },
+  "homepage": "https://github.com/mrvinrsk/Upgrade_SCSS#readme",
+  "description": "Upgrade SCSS is a simple Design-Framework written in SCSS mostly by me for my private usage."
 }

@@ -1,11 +1,11 @@
 $main: (
-        "main-lightest": #b5c9f8,
-        "main-lighter": #8baeee,
-        "main-light": #5b91e8,
-        "main": #3373d7,
-        "main-dark": #0d45a3,
-        "main-darker": #043380,
-        "main-darkest": #011e50
+        "main-lightest": #fca581,
+        "main-lighter": #ff8047,
+        "main-light": #ff6b2d,
+        "main": #fc5102,
+        "main-dark": #b43800,
+        "main-darker": #8b2c01,
+        "main-darkest": #611e00
 );
 
 $gray: (
@@ -31,13 +31,13 @@ $success: (
 );
 
 $error: (
-        "error-lightest": #f19a5e,
-        "error-lighter": #fa8b39,
-        "error-light": #ff7a1b,
-        "error": #ff6b00,
-        "error-dark": #cb5400,
-        "error-darker": #a03e00,
-        "error-darkest": #7b3100
+        "warning-lightest": #ffe46a,
+        "warning-lighter": #ffde47,
+        "warning-light": #fdd92c,
+        "warning": #ffd500,
+        "warning-dark": #bfa000,
+        "warning-darker": #937b00,
+        "warning-darkest": #6d5d00
 );
 
 $info: (
@@ -54,7 +54,7 @@ $dark: (
         "dark-lightest": #555555,
         "dark-lighter": #444444,
         "dark-light": #333333,
-        "dark": #222222,
+        "dark": #202020,
         "dark-darker": #111111,
         "black": #000,
 );
@@ -86,7 +86,8 @@ $theme: (
   }
 }
 
-@function lighter($name, $color: false) {
+
+@function lighter($name, $color: false, $steps: 1) {
   $list: null;
   //@debug $name;
 
@@ -105,8 +106,7 @@ $theme: (
     @error "Color '#{$name}' not found in '#{$list}'";
   }
 
-  $ret: if($n > 1, nth($keys, ($n - 1)), null);
-  @debug $ret;
+  $ret: if($n > $steps, nth($keys, ($n - $steps)), null);
 
   @if not $color {
     @return $ret;
@@ -115,7 +115,7 @@ $theme: (
   }
 }
 
-@function darker($name, $color: false) {
+@function darker($name, $color: false, $steps: 1) {
   $list: null;
   //@debug $name;
 
@@ -134,9 +134,7 @@ $theme: (
     @error "Color '#{$name}' not found in '#{$list}'";
   }
 
-  $ret: if($n < length($keys), nth($keys, ($n + 1)), null);
-  @debug $ret;
-
+  $ret: if($n < length($keys), nth($keys, ($n + $steps)), null);
 
   @if not $color {
     @return $ret;

@@ -1,0 +1,117 @@
+@import "../colors";
+@import "../font";
+@import "../spacing";
+
+
+$animationDuration: .325s;
+.button {
+  position: relative;
+  border: none;
+  transition-duration: $animationDuration;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 5;
+  text-decoration: none;
+
+  @extend .border-radius-1;
+  @extend .px-4;
+  @extend .py-2;
+  @extend .fw-semibold;
+
+  &:before, &:after {
+    position: absolute;
+    transform: translate(-50%, -50%) skewX(-25deg);
+    top: 50%;
+    content: '';
+
+    width: 110%;
+    height: 105%;
+    z-index: -1;
+
+    transition-duration: $animationDuration;
+
+    @extend .border-radius-1;
+  }
+
+  &:before {
+    left: -75%;
+  }
+
+  &:after {
+    left: 175%;
+  }
+
+  p {
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+    @extend .fc-dark;
+
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      left: 100%;
+    }
+  }
+}
+
+.simple-button {
+  position: relative;
+  border: none;
+  transition-duration: $animationDuration;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 5;
+
+  @extend .px-4;
+  @extend .py-2;
+  @extend .fw-semibold;
+  @extend .border-radius-1;
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+}
+
+@include eachColor() using($name, $value) {
+  body .button-#{$name} {
+    color: $value;
+    border: 1px solid $value;
+
+    &:not(:disabled) {
+      &:before, &:after {
+        border: none;
+        background-color: $value;
+      }
+
+      &:hover {
+        border: 1px solid transparentize($value, 1);
+      }
+    }
+  }
+
+  body .button-#{$name}:disabled {
+    filter: grayscale(60%);
+  }
+
+  body .simple-button-#{$name} {
+    color: $value;
+
+    &:not(:disabled):hover {
+      color: lighter($name, true);
+      background-color: transparentize(darken($value, .5), .85);
+    }
+  }
+}

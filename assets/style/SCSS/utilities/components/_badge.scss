@@ -1,0 +1,22 @@
+@import "../colors";
+@import "../font";
+@import "../spacing";
+@import "../borders";
+
+@include eachColor() using($name, $color) {
+  .badge-#{$name} {
+    display: inline;
+    @extend .fsi-smaller;
+    @extend .border-radius-2;
+    @extend .px-2;
+    @extend .py-1;
+
+    color: darker(#{$name}, true);
+
+    @if (lighter(#{$name}, true) != null) {
+      background-color: transparentize(lighter(#{$name}, true), .35);
+    }
+
+    border: 2px solid darker(#{$name}, true);
+  }
+}

@@ -2,7 +2,7 @@
 @import "layout/container";
 
 /* Spacing */
-$defaultSpace: .325rem;
+$defaultSpace: .365rem;
 $spacers: (
         0: 0,
         1: $defaultSpace,
@@ -10,16 +10,16 @@ $spacers: (
         3: $defaultSpace * 3,
         4: $defaultSpace * 4,
         5: $defaultSpace * 5,
-        6: $defaultSpace * 6,
-        7: $defaultSpace * 7,
-        8: $defaultSpace * 8,
-        9: $defaultSpace * 9,
-        10: $defaultSpace * 10,
-        11: $defaultSpace * 15,
-        12: $defaultSpace * 20,
-        13: $defaultSpace * 25,
-        14: $defaultSpace * 30,
-        15: $defaultSpace * 35
+        6: $defaultSpace * 8,
+        7: $defaultSpace * 10,
+        8: $defaultSpace * 12,
+        9: $defaultSpace * 14,
+        10: $defaultSpace * 15,
+        11: $defaultSpace * 20,
+        12: $defaultSpace * 25,
+        13: $defaultSpace * 30,
+        14: $defaultSpace * 35,
+        15: $defaultSpace * 40
 );
 
 
@@ -168,15 +168,15 @@ $spacers: (
 
       /* Gaps */
       .g-#{$name}-#{$spName} {
-        gap: $spacer/2.65;
+        gap: $spacer/2.34;
       }
 
       .gx-#{$name}-#{$spName} {
-        column-gap: $spacer/2.65;
+        column-gap: $spacer/2.35;
       }
 
       .gy-#{$name}-#{$spName} {
-        row-gap: $spacer/2.65;
+        row-gap: $spacer/2.35;
       }
     }
   }

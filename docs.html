@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style/CSS/minified/Upgrade.min.css">
+
+    <style>
+        #funfact::before {
+            content: 'Fun Fact: ';
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-lg my-3 my-lg-10">
+    <h1 class="heading heading-2 fs-underline mb-1 mb-lg-2">Documentation</h1>
+
+    <section class="fsi-large">
+        Soon you may find a documentation of this framework here. 😎<br/>
+        <span id="funfact"></span>
+    </section>
+</div>
+
+<script>
+    const facts = Array(
+        'This page is made using only Upgrade.',
+        'You\'ve found an easter egg, congratulations!'
+    );
+    document.getElementById('funfact').innerText = facts[Math.floor(Math.random()*facts.length)];
+</script>
+
+</body>
+</html>

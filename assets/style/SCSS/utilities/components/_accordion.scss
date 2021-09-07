@@ -1,0 +1,65 @@
+@import "../colors";
+@import "../font";
+@import "../spacing";
+
+.accordion {
+
+  .accordion__toggle {
+    @extend .fc-dark;
+    @extend .py-2;
+    @extend .bg-gray-lightest;
+    @extend .border-radius-2;
+    @extend .fsi-small;
+
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: .35s ease-in-out;
+  }
+
+  .accordion__content {
+    background-color: map-get($main, "main-lightest");
+
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all .5s ease-in-out;
+
+    .accordion__title {
+      @extend .fsi-large;
+      @extend .fs-underline;
+      @extend .fw-semibold;
+    }
+
+    .accordion__description {
+      text-align: justify;
+    }
+  }
+}
+
+html body .accordion__toggle.opened {
+  @extend .bg-main;
+  @extend .fc-dark;
+
+  border-radius: 5px 5px 0 0;
+
+  + .accordion__content {
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@include eachColor() using($name, $value) {
+  html body .accordion-#{$name} {
+    .accordion__toggle.opened {
+      background-color: $value;
+    }
+
+    .accordion__content {
+      color: darker($name, true);
+      background-color: lighter($name, true);
+    }
+  }
+}

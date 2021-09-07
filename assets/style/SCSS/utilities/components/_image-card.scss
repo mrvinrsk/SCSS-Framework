@@ -1,0 +1,173 @@
+@import "../colors";
+@import "../layout/breakpoints";
+@import "../borders";
+@import "../font";
+
+
+.ic-textpadding {
+  @extend .px-3;
+  @extend .px-lg-4;
+
+  @extend .py-2;
+  @extend .py-lg-3;
+}
+
+
+.image-card {
+  position: relative;
+  /*@extend .border-radius-2;*/
+  clip-path: polygon(10% 0, 90% 0, 90% 100%, 10% 100%);
+  overflow: hidden;
+
+  min-width: 325px;
+  min-height: 75px;
+
+  max-width: 750px;
+  max-height: 250px;
+
+  transition-duration: .25s;
+
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @extend .bg-main-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @extend .bg-main-light;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @extend .bg-main;
+  }
+
+
+  img {
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    transition-duration: .25s;
+  }
+
+  .image-card__summary {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+    padding: .325rem 1.25rem;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+  }
+
+  &:hover, &:focus-within {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transform: scale(1.075);
+    @extend .border-radius-2;
+
+    .image-card__slide {
+      bottom: 0;
+    }
+
+    .image-card__summary {
+      bottom: -15%;
+      opacity: 0;
+    }
+
+    img {
+      filter: grayscale(.65);
+      transform: scale(1.175);
+    }
+  }
+
+  .image-card__summary {
+    @extend .fsi-large;
+    @extend .fc-main;
+    @extend .fa-center;
+
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition-duration: .25s;
+  }
+
+  .image-card__slide {
+    @extend .ic-textpadding;
+    max-height: calc(100% - 4.5rem);
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: -150%;
+    transition-duration: .25s;
+
+    background-color: rgba(0, 0, 0, .275);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+    .image-card__slide__title {
+      @extend .fsi-regular;
+      @extend .fs-underline;
+      @extend .fw-bold;
+    }
+
+    .image-card__slide__description {
+      @extend .fsi-small;
+      @extend .fa-justify;
+    }
+
+    .image-card__slide__link {
+      @extend .py-1;
+      @extend .border-radius-2;
+      @extend .bg-main;
+      @extend .fc-white-darker;
+      @extend .fs-none;
+
+      @extend .mt-2;
+      @extend .mt-lg-3;
+      @extend .fsi-large;
+      text-align: center;
+
+      &:hover {
+        background-color: darken(map-get($main, "main"), .5);
+      }
+    }
+
+    .spec {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .spec-key {
+        @extend .fw-bold;
+        @extend .fc-main;
+      }
+
+      .spec-value {
+        @extend .fc-main-light;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  html body .image-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@include eachColor() using($name, $value) {
+  body .image-card-border-#{$name} {
+    border: 2px solid $value;
+  }
+}

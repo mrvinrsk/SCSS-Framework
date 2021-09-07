@@ -1,0 +1,121 @@
+@import "layout/breakpoints";
+@import "colors";
+
+/* Texts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+$weights: (
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+);
+
+@each $name, $weight in $weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+$sizes: (
+        "smallest": .5rem,
+        "smaller": .75rem,
+        "small": 1rem,
+        "regular": 1.175rem,
+        "large": 1.35rem,
+        "larger": 1.65rem,
+        "largest": 2rem,
+        "xl": 3rem,
+        "2xl": 4rem,
+        "3xl": 5rem
+);
+
+@each $name, $size in $sizes {
+  body .heading-#{$name}, body .fsi-#{$name} {
+    font-size: $size;
+  }
+}
+
+@include eachBreakpoint() using($bp, $px) {
+  @each $name, $value in $sizes {
+    @include media-breakpoint-up($bp) {
+      body .fsi-#{$bp}-#{$name} {
+        font-size: $value;
+      }
+    }
+  }
+}
+
+@include eachColor() using($name, $value) {
+  body .fc-#{$name} {
+    color: $value;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: 'Raleway', sans-serif;
+  @extend .fw-bold;
+  @extend .fsi-largest;
+  @extend .fc-main;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fs-none {
+  text-decoration: none;
+}
+
+.fs-underline {
+  text-decoration: underline;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+:root {
+  font-family: 'Urbanist', serif;
+  @extend .fsi-regular;
+  @extend .fw-regular;
+  @extend .fc-gray-lightest;
+}
+
+
+$alignments:(
+left, center, right, justify
+);
+
+.fa-left {
+  text-align: left;
+}
+
+.fa-center {
+  text-align: center;
+}
+
+.fa-right {
+  text-align: right;
+}
+
+.fa-justify {
+  text-align: justify;
+}
+
+@each $align in $alignments {
+  .fa-#{$align} {
+    text-align: $align;
+  }
+
+  @include eachBreakpoint() using($bp, $px) {
+    @include media-breakpoint-up($bp) {
+      body .fa-#{$bp}-#{$align} {
+        text-align: $align;
+      }
+    }
+  }
+}

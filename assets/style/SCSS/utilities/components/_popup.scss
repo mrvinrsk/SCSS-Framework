@@ -1,0 +1,60 @@
+@import "../colors";
+@import "../spacing";
+@import "../borders";
+@import "../font";
+@import "../layout/breakpoints";
+
+.popup__wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .15);
+  z-index: 999;
+}
+
+.popup {
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+  left: 50%;
+
+  @extend .px-4;
+  @extend .px-lg-8;
+  @extend .py-2;
+  @extend .py-lg-4;
+
+  @extend .border-radius-2;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, .425);
+
+  .popup__title {
+    @extend .heading;
+    @extend .fs-underline;
+    @extend .fw-semibold;
+  }
+
+  .popup__description {
+    @extend .fsi-small;
+    @extend .fa-justify;
+  }
+
+  .popup__title + .popup__description {
+    @extend .mt-1;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .popup {
+    max-width: 30vw;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .popup {
+    min-width: 90vw;
+  }
+}

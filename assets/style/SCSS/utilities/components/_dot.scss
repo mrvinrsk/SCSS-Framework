@@ -1,0 +1,32 @@
+@import "../colors";
+@import "../borders";
+
+.dot {
+  width: 3px;
+  height: 3px;
+  @extend .border-radius-round;
+}
+
+$sizes: (
+        1: 3px,
+        2: 5px,
+        3: 10px
+);
+
+@each $name, $value in $sizes {
+  body .dot-#{$name} {
+    width: $value;
+    height: $value;
+  }
+}
+
+
+@include eachColor() using($name, $value) {
+  .dot-#{$name} {
+    background-color: $value;
+
+    .dot-bordered {
+      border: 1px solid darker($name, true);
+    }
+  }
+}
