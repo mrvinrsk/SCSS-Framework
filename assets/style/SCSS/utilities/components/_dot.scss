@@ -2,6 +2,7 @@
 @import "../borders";
 
 .dot {
+  display: inline-block;
   width: 3px;
   height: 3px;
   @extend .border-radius-round;
@@ -23,6 +24,7 @@ $sizes: (
 
 @include eachColor() using($name, $value) {
   .dot-#{$name} {
+    @extend .dot;
     background-color: $value;
 
     .dot-bordered {

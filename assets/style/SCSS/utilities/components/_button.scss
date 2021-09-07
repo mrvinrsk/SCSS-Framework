@@ -87,6 +87,7 @@ $animationDuration: .325s;
 
 @include eachColor() using($name, $value) {
   body .button-#{$name} {
+    @extend .button;
     color: $value;
     border: 1px solid $value;
 
@@ -107,6 +108,7 @@ $animationDuration: .325s;
   }
 
   body .simple-button-#{$name} {
+    @extend .simple-button;
     color: $value;
 
     &:not(:disabled):hover {

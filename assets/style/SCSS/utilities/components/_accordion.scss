@@ -53,6 +53,8 @@ html body .accordion__toggle.opened {
 
 @include eachColor() using($name, $value) {
   html body .accordion-#{$name} {
+    @extend .accordion;
+
     .accordion__toggle.opened {
       background-color: $value;
     }

@@ -36,3 +36,8 @@
 html, body {
   @extend .bg-dark-darker;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

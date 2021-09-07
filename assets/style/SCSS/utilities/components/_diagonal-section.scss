@@ -1,6 +1,7 @@
 @import "../layout/breakpoints";
 @import "../colors";
 
+$rot: 2.75deg;
 .diagonal_section {
   position: relative;
   z-index: 5;
@@ -22,10 +23,18 @@
 
   @extend .bg-main;
   z-index: -1;
-  transform: skewY(2.75deg);
+  transform: skewY($rot);
+}
+
+body .diagonal_section.diagonal_section-invert::before {
+  transform: skewY(-$rot);
 }
 
 @include eachColor() using($name, $value) {
+  body .diagonal_section-#{$name} {
+    @extend .diagonal_section;
+  }
+
   body .diagonal_section-#{$name}::before {
     background-color: $value;
   }

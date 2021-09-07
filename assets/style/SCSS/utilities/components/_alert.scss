@@ -5,12 +5,14 @@
   width: 100%;
 
   @extend .border;
+  @extend .fa-justify;
   @extend .border-radius-2;
   padding: .65rem 1.25rem;
 }
 
 @include eachColor() using($name, $color) {
   .alert-#{$name} {
+    @extend .alert;
     border: 1.5px solid $color;
 
     background-color: transparentize(lighten($color, 15), .75);

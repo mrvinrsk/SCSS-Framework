@@ -78,15 +78,15 @@ $spacers: (
 
   /* Gaps */
   .g-#{$name} {
-    gap: $spacer/2.65;
+    gap: $spacer/2.25;
   }
 
   .gx-#{$name} {
-    column-gap: $spacer/2.65;
+    column-gap: $spacer/2.25;
   }
 
   .gy-#{$name} {
-    row-gap: $spacer/2.65;
+    row-gap: $spacer/2.25;
   }
 
   .px-#{$name} {

@@ -14,56 +14,365 @@
 <div class="container-lg my-3 my-lg-10">
     <h1 class="heading heading-larger fs-underline mb-1 mb-lg-2">Documentation</h1>
 
-    <section class="alert alert-warning mb-5 mb-lg-8">
+    <section class="alert-warning mb-5 mb-lg-8">
         Soon you may find a complete documentation of this framework here. 😎<br/>
         <span id="funfact"></span>
     </section>
 
-    <section>
-        <div class="my-2 my-lg-4">
-            <p class="heading redirect" id="accordion">Accordions</p>
-            <p class="description">
-                Accordions are simple boxes with a summary and a longer text within it. When you click on an accordion
-                it will open up and show the insides information. Try it out!
-            </p>
+    <div class="d-flex flex-d-column gy-3 gy-lg-6">
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="accordions">Accordions</p>
+                <p class="description">
+                    Accordions are simple boxes with a summary and a longer text within it. When you click on an
+                    accordion
+                    it will open up and show the insides information. Try it out!
+                </p>
 
-            <div class="alert alert-info mt-1 mt-lg-2">
-                You're able to tint accordions by simply adding accordion-COLOR on top of the accordion class as seen as
-                in the example below. COLOR has to be a color from Upgrades colorscheme.
-            </div>
-        </div>
-
-        <div class="example">
-            <div class="accordion accordion-main">
-                <button class="accordion__toggle">Toggle</button>
-
-                <div class="accordion__content">
-                    <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
-                    <p class="accordion__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum illum
-                        ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
-                    </p>
+                <div class="alert-info mt-1 mt-lg-2">
+                    You're able to tint accordions by simply using accordions-COLOR instead of the accordion class as
+                    seen as
+                    in the example below. COLOR has to be a color from Upgrades colorscheme.s
                 </div>
             </div>
-        </div>
 
-        <div class="code my-2 my-lg-4">
-            <pre>
-                <code>
-&lt;div class="accordion accordion-main"&gt;
+            <div class="example">
+                <div class="accordion accordion-main">
+                    <button class="accordion__toggle">Toggle</button>
+
+                    <div class="accordion__content">
+                        <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p class="accordion__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
+                            illum ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+            <pre><code>&lt;div class="accordion accordion-main"&gt;
     &lt;button class="accordion__toggle"&gt;Toggle&lt;/button&gt;
 
     &lt;div class="accordion__content"&gt;
         &lt;p class="accordion__title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
         &lt;p class="accordion__description"&gt;
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum illum
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
+            illum
             ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
         &lt;/p&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code>
-            </pre>
-        </div>
-    </section>
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="alerts">Alerts</p>
+                <p class="description">
+                    Alerts are a practical way to inform the user of your website about completed processes, errors, or
+                    similar.
+                </p>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    You're able to tint alerts by simply using alert-COLOR instead of the alert class as seen as
+                    in the example below. COLOR has to be a color from Upgrades colorscheme.
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="alert-main">
+                    This is a simple alert! You can use it for barely everything.
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <code class="language-html">&lt;div class="alert-main"&gt;This is a simple alert! You can use it for
+                    barely everything.&lt;/div&gt;</code>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="badges">Badges</p>
+                <p class="description">
+                    Badges are a great way to display, for example, new features.
+                </p>
+            </div>
+
+            <div class="example">
+                <p>Lorem ipsum dolor sit. <span class="badge-warning">New</span></p>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <code class="language-html">&lt;p&gt;Lorem ipsum dolor sit. &lt;span class="badge-warning"&gt;New&lt;/span&gt;&lt;/p&gt;</code>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="buttons">Buttons</p>
+                <p class="description">
+                    Well I guess I don't have to explain what a button is...
+                </p>
+
+                <div class="alert-warning mt-1 mt-lg-2">
+                    You're not yet able to use the button class with &lt;a&gt; Tags; if you have to use &lt;a&gt;,
+                    please use <a href="#simple-buttons"
+                                  style="text-decoration: underline"><code>simple-button</code></a>'s
+                </div>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    You're able to tint buttons by simply using button-COLOR instead of the buttons class as seen as
+                    in the example below. COLOR has to be a color from Upgrades colorscheme.
+                </div>
+            </div>
+
+            <div class="example">
+                <button class="button-main">Button</button>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <code class="language-html">&lt;button class="button-main"&gt;Button&lt;/button&gt;</code>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="simple-buttons">Simple Buttons</p>
+                <p class="description">
+                    Well I guess I don't have to explain what a button is...
+                </p>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    You're able to tint buttons by simply using button-COLOR instead of the buttons class as seen as
+                    in the example below. COLOR has to be a color from Upgrades colorscheme.
+                </div>
+            </div>
+
+            <div class="example">
+                <a class="simple-button-main">Simple Button</a>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <code>&lt;a class="simple-button-main"&gt;Simple Button&lt;/a&gt;</code>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="cards">Cards</p>
+                <p class="description">
+                    A simple design element to display information.
+                </p>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    Cards can include an image, however there is an animated alternative for cards with images:
+                    <a href="#image-cards" class="fs-underline"><code>image-card</code></a>'s.
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="card">
+                    <img src="https://via.placeholder.com/1280x720" class="card__image">
+
+                    <div class="card__content">
+                        <p class="card__title">Lorem ipsum dolor sit.</p>
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+                            officiis?
+                        </p>
+
+                        <hr/>
+
+                        <div class="card__links" id="card__links">
+                            <a href="#card__links">Link</a>
+                            <a href="#card__links">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="card"&gt;
+    &lt;img src="https://via.placeholder.com/1280x720" class="card__image"&gt;
+
+    &lt;div class="card__content"&gt;
+        &lt;p class="card__title"&gt;Lorem ipsum dolor sit.&lt;/p&gt;
+        &lt;p class="card__description"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+            officiis?
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="diagonal-sections">Diagonal Sections</p>
+                <p class="description">
+                    Create fancy diagonal layouts like its 2020.
+                </p>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    You're able to tint diagonal sections by simply using diagonal_section-COLOR instead of the buttons
+                    class as seen as
+                    in the example below. COLOR has to be a color from Upgrades colorscheme. Furthermore you can add
+                    <code>diagonal_section-invert</code> as a class to invert the skew.
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="diagonal_section-main-dark diagonal_section">
+                    <p class="fsi-larger fw-bold fc-main-lighter fs-underline">Lorem ipsum dolor sit amet,
+                        consectetur.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas repellat
+                        sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
+                        pariatur. Exercitationem omnis reprehenderit suscipit!
+                    </p>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code class="language-html">&lt;div class="diagonal_section-main-dark diagonal_section"&gt;
+    &lt;p class="fsi-larger fw-bold fc-main-lighter fs-underline"&gt;Lorem ipsum dolor sit amet,consectetur.&lt;/p&gt;
+    &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas repellat
+        sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
+        pariatur. Exercitationem omnis reprehenderit suscipit!
+    &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="image-cards">Image Cards</p>
+                <p class="description">
+                    An alternative for <a href="#cards" class="fs-underline"><code>card</code></a>'s whose focus lays on
+                    the actual image.
+                </p>
+
+                <div class="alert alert-info mt-1 mt-lg-2">
+                    You have to define a color which is going to be used by writing dot-COLOR as seen as in the example
+                    below. COLOR has to be a color from Upgrades colorscheme. Furthermore you can add change the size by
+                    using dot-SIZE (1-3).
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="image-card">
+                    <img src="https://via.placeholder.com/1280x720">
+
+                    <p class="image-card__summary">Summary</p>
+
+                    <div class="image-card__slide">
+                        <p class="image-card__slide__title">Lorem ipsum dolor sit amet.</p>
+                        <p class="image-card__slide__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam animi, est
+                            et explicabo possimus qui rerum similique vero?
+                        </p>
+
+                        <div id="specs" class="mt-1">
+                            <div class="spec">
+                                <p class="spec-key">Key</p>
+                                <p class="spec-value">Value</p>
+                            </div>
+                            <div class="spec">
+                                <p class="spec-key">Key</p>
+                                <p class="spec-value">Value</p>
+                            </div>
+                        </div>
+
+                        <a href="#image-card-link" id="image-card-link" class="image-card__slide__link">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="image-card"&gt;
+    &lt;img src="https://via.placeholder.com/1280x720"&gt;
+
+    &lt;p class="image-card__summary"&gt;Summary&lt;/p&gt;
+
+    &lt;div class="image-card__slide"&gt;
+        &lt;p class="image-card__slide__title"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p class="image-card__slide__description"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam animi, est
+            et explicabo possimus qui rerum similique vero?
+        &lt;/p&gt;
+
+        &lt;div id="specs" class="mt-1"&gt;
+            &lt;div class="spec"&gt;
+                &lt;p class="spec-key"&gt;Key&lt;/p&gt;
+                &lt;p class="spec-value"&gt;Value&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="spec"&gt;
+                &lt;p class="spec-key"&gt;Key&lt;/p&gt;
+                &lt;p class="spec-value"&gt;Value&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;a href="#image-card-link" id="image-card-link" class="image-card__slide__link"&gt;Button&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading redirect" id="popups">Popups</p>
+                <p class="description">
+                    *plop*
+                </p>
+            </div>
+
+            <div class="example">
+                <div class="popup__wrapper" id="demo_popup">
+                    <div class="popup bg-white-darker">
+                        <p class="popup__title">Lorem ipsum dolor sit amet,
+                            consectetur.</p>
+                        <p class="fc-dark-light popup__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas
+                            repellat
+                            sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
+                            pariatur. Exercitationem omnis reprehenderit suscipit!
+                        </p>
+
+                        <div class="d-flex flex-j-flex-end">
+                            <button onclick="togglePopup('demo_popup')" class="button-main mt-2">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="togglePopup('demo_popup')" class="button-main">Show Popup</button>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="popup__wrapper" id="demo_popup_"&gt;
+    &lt;div class="popup bg-white-darker"&gt;
+        &lt;p class="popup__title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
+        &lt;p class="fc-dark-light popup__description"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas
+            repellat sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
+            pariatur. Exercitationem omnis reprehenderit suscipit!
+        &lt;/p&gt;
+
+        &lt;div class="d-flex flex-j-flex-end"&gt;
+            &lt;button onclick="togglePopup('demo_popup_')" class="button-main mt-2"&gt;Dismiss&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button onclick="togglePopup('demo_popup_')" class="button-main"&gt;Show Popup&lt;/button&gt;</code></pre>
+            </div>
+        </section>
+
+
+        <div class="alert-gray-lightest mt-2 mt-lg-5">More documentation soon... 👋</div>
+    </div>
 </div>
 
 <script>

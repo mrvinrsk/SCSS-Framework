@@ -2,23 +2,37 @@
 @import "../font";
 
 .card {
-  max-width: 22.5rem;
+  max-width: 25rem;
+  overflow: hidden;
+  border-radius: 8px;
+
+  @extend .px-3;
+  @extend .px-lg-4;
+
+  @extend .py-2;
+  @extend .py-lg-3;
+
+  @extend .bg-white-darker;
 
   .card__image {
-
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 
   .card__content {
 
     .card__title {
       @extend .heading;
-      @extend .heading-large;
+      @extend .fsi-regular;
 
-      @extend .mb-4;
+      @extend .mb-1;
     }
 
     .card__description {
       @extend .fa-justify;
+      @extend .fsi-small;
+      @extend .fc-dark-lighter;
     }
 
     hr {
@@ -35,8 +49,8 @@
   }
 
   .card__links {
-    @extend .link;
     @extend .fc-main;
+    text-decoration: underline;
 
     list-style-type: none;
     display: flex;

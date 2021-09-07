@@ -110,6 +110,7 @@ if (obfs.length >= 1) {
 
 
 var redirects = document.getElementsByClassName('redirect');
-for (var o = 0; o < length; o++) {
-    redirects[o].innerHTML = "<a href='#" + o.id + "'>" + redirects[o].innerText + "</a>";
+for (var o = 0; o < redirects.length; o++) {
+    var red = redirects[o];
+    red.innerHTML = "<a href='#" + red.id + "'>" + red.innerText + "</a>";
 }

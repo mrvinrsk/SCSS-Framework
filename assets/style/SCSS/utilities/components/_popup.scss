@@ -32,8 +32,9 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, .425);
 
   .popup__title {
-    @extend .heading;
+    @extend .fsi-regular;
     @extend .fs-underline;
+    @extend .fc-main;
     @extend .fw-semibold;
   }
 

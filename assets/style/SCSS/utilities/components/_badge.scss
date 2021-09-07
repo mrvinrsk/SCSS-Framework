@@ -5,18 +5,18 @@
 
 @include eachColor() using($name, $color) {
   .badge-#{$name} {
-    display: inline;
-    @extend .fsi-smaller;
+    display: inline-block;
+    margin: 0 .5rem;
+    font-size: calc(100% - .325rem);
     @extend .border-radius-2;
-    @extend .px-2;
-    @extend .py-1;
+    padding: .165rem .5rem;
 
-    color: darker(#{$name}, true);
+    color: $color;
 
     @if (lighter(#{$name}, true) != null) {
-      background-color: transparentize(lighter(#{$name}, true), .35);
+      background-color: transparentize(lighten($color, 15), .75);
     }
 
-    border: 2px solid darker(#{$name}, true);
+    border: 1px solid darker(#{$name}, true);
   }
 }
