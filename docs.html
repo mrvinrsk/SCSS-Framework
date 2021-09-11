@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Upgrade - Documentation</title>
 
     <link rel="stylesheet" href="assets/style/CSS/minified/Upgrade.min.css">
     <link rel="stylesheet" href="assets/style/CSS/minified/docs.min.css">
@@ -22,7 +22,7 @@
     <div class="d-flex flex-d-column gy-3 gy-lg-6">
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="accordions">Accordions</p>
+                <p class="heading local_redirect" id="accordions">Accordions</p>
                 <p class="description">
                     Accordions are simple boxes with a summary and a longer text within it. When you click on an
                     accordion
@@ -68,7 +68,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="alerts">Alerts</p>
+                <p class="heading local_redirect" id="alerts">Alerts</p>
                 <p class="description">
                     Alerts are a practical way to inform the user of your website about completed processes, errors, or
                     similar.
@@ -94,7 +94,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="badges">Badges</p>
+                <p class="heading local_redirect" id="badges">Badges</p>
                 <p class="description">
                     Badges are a great way to display, for example, new features.
                 </p>
@@ -111,7 +111,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="buttons">Buttons</p>
+                <p class="heading local_redirect" id="buttons">Buttons</p>
                 <p class="description">
                     Well I guess I don't have to explain what a button is...
                 </p>
@@ -139,7 +139,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="simple-buttons">Simple Buttons</p>
+                <p class="heading local_redirect" id="simple-buttons">Simple Buttons</p>
                 <p class="description">
                     Well I guess I don't have to explain what a button is...
                 </p>
@@ -161,7 +161,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="cards">Cards</p>
+                <p class="heading local_redirect" id="cards">Cards</p>
                 <p class="description">
                     A simple design element to display information.
                 </p>
@@ -210,7 +210,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="diagonal-sections">Diagonal Sections</p>
+                <p class="heading local_redirect" id="diagonal-sections">Diagonal Sections</p>
                 <p class="description">
                     Create fancy diagonal layouts like its 2020.
                 </p>
@@ -249,7 +249,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="image-cards">Image Cards</p>
+                <p class="heading local_redirect" id="image-cards">Image Cards</p>
                 <p class="description">
                     An alternative for <a href="#cards" class="fs-underline"><code>card</code></a>'s whose focus lays on
                     the actual image.
@@ -323,7 +323,7 @@
 
         <section>
             <div class="mb-2 mb-lg-4">
-                <p class="heading redirect" id="popups">Popups</p>
+                <p class="heading local_redirect" id="popups">Popups</p>
                 <p class="description">
                     *plop*
                 </p>
@@ -367,6 +367,94 @@
 &lt;/div&gt;
 
 &lt;button onclick="togglePopup('demo_popup_')" class="button-main"&gt;Show Popup&lt;/button&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading local_redirect" id="tooltips">Tooltips</p>
+                <p class="description">
+                    Great for explaining.
+                </p>
+
+                <div class="alert-warning mt-1 mt-lg-2">
+                    Currently incompatible with using <code>overflow: hidden;</code> on parents.
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="tooltip-wrapper">
+                    <p>Hover me!</p>
+
+                    <div class="tooltip">
+                        <p class="tooltip-title">Lorem ipsum dolor sit amet.</p>
+                        <p class="tooltip-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nulla?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="tooltip-wrapper"&gt;
+    &lt;p&gt;Hover me!&lt;/p&gt;
+
+    &lt;div class="tooltip"&gt;
+       &lt;p class="tooltip-title"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+       &lt;p class="tooltip-description"&gt;
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nulla?
+       &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-2 mb-lg-4">
+                <p class="heading local_redirect" id="placeholders">Placeholders</p>
+                <p class="description">
+                    You can use placeholders for content that isn't loaded yet.
+                </p>
+
+                <div class="alert-error mt-1 mt-lg-2">
+                    Placeholders are currently in beta-state. Use at your own risk!
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="card">
+                    <img src="https://via.placeholder.com/1280x720" class="card__image placeholder">
+
+                    <div class="card__content">
+                        <p class="card__title placeholder"></p>
+                        <p class="card__description placeholder"></p>
+
+                        <hr/>
+
+                        <div class="card__links" id="card__links_2">
+                            <a href="#card__links_2" class="placeholder"></a>
+                            <a href="#card__links_2" class="placeholder"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="card"&gt;
+    &lt;img src="https://via.placeholder.com/1280x720" class="card__image placeholder"&gt;
+
+    &lt;div class="card__content"&gt;
+        &lt;p class="card__title placeholder"&gt;&lt;/p&gt;
+        &lt;p class="card__description placeholder"&gt;&lt;/p&gt;
+
+        &lt;hr/&gt;
+
+        &lt;div class="card__links" id="card__links_2"&gt;
+            &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
+            &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </section>
 

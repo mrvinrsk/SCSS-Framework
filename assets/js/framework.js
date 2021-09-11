@@ -109,8 +109,18 @@ if (obfs.length >= 1) {
 }
 
 
-var redirects = document.getElementsByClassName('redirect');
+var redirects = document.getElementsByClassName('local_redirect');
 for (var o = 0; o < redirects.length; o++) {
     var red = redirects[o];
     red.innerHTML = "<a href='#" + red.id + "'>" + red.innerText + "</a>";
+}
+
+
+
+var placeholders = document.getElementsByClassName('placeholder');
+for (var p = 0; p < placeholders.length; p++) {
+    var ph = placeholders[p];
+
+    //ph.style.height = window.getComputedStyle(ph, null).getPropertyValue('font-size');
+    ph.style.backgroundColor = window.getComputedStyle(ph, null).getPropertyValue('color');
 }

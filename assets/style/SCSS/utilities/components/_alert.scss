@@ -17,5 +17,9 @@
 
     background-color: transparentize(lighten($color, 15), .75);
     color: $color;
+
+    code, pre, p, h1, h2, h3, h4, h5, h6 {
+      color: $color;
+    }
   }
 }

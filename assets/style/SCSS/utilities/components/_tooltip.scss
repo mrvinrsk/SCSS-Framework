@@ -21,8 +21,8 @@
 
     position: absolute;
 
-    @extend .px-5;
-    @extend .py-3;
+    @extend .px-4;
+    @extend .py-2;
 
     @extend .bg-white-darker;
     @extend .border-radius-2;
@@ -32,15 +32,13 @@
 
 
     .tooltip-title {
-      @extend .fsi-large;
+      @extend .fsi-regular;
       @extend .fc-main-dark;
       @extend .fs-underline;
-
-      @extend .mb-1;
     }
 
     .tooltip-description {
-      @extend .fsi-regular;
+      @extend .fsi-small;
       @extend .fa-justify;
       @extend .fc-gray;
     }
