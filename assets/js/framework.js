@@ -112,7 +112,7 @@ if (obfs.length >= 1) {
 var redirects = document.getElementsByClassName('local_redirect');
 for (var o = 0; o < redirects.length; o++) {
     var red = redirects[o];
-    red.innerHTML = "<a href='#" + red.id + "'>" + red.innerText + "</a>";
+    red.innerHTML = "<a href='#" + red.id + "'><span>#</span></a> " + red.innerText;
 }
 
 
@@ -124,3 +124,4 @@ for (var p = 0; p < placeholders.length; p++) {
     //ph.style.height = window.getComputedStyle(ph, null).getPropertyValue('font-size');
     ph.style.backgroundColor = window.getComputedStyle(ph, null).getPropertyValue('color');
 }
+s

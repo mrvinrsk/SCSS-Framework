@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <title>Upgrade</title>
 
-    <link rel="stylesheet" href="assets/style/CSS/minified/Upgrade.min.css">
-    <script src="assets/js/framework.js" defer></script>
+    <link rel="stylesheet" href="../assets/style/CSS/minified/Upgrade.min.css">
+    <script src="../assets/js/framework.js" defer></script>
 </head>
 <body>
 
-<nav></nav>
+<?php include_once "./assets/elements/navigator.html"; ?>
 
 <main>
     <div class="py-5 py-lg-10 fa-center">
-        <p class="heading">Welcome to Upgrade</p>
+        <div class="mb-2 mb-lg-4">
+            <p class="heading">Welcome to Upgrade</p>
+            <p class="fsi-large">Upgrades, people... <b>Upgrades!</b></p>
+        </div>
         <p class="fsi-regular fc-main-dark">
             Upgrade is your simple (S)CSS Framework for finishing your Website-Design faster.
         </p>

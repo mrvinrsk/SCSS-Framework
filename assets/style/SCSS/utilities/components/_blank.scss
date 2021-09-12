@@ -1,0 +1,24 @@
+@import "../font";
+
+.blank {
+  position: relative;
+  text-align: center;
+
+  .blank__icon, .blank__image {
+    margin-bottom: 3px;
+  }
+
+  .blank__image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .blank__title {
+    @extend .fw-bold;
+    @extend .fsi-large;
+  }
+
+  .blank__description {
+    @extend .fsi-small;
+  }
+}

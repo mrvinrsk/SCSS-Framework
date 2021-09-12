@@ -1,0 +1,67 @@
+@import "../colors";
+
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: .2rem 0;
+  width: 100%;
+}
+
+.progress .progress_step {
+  flex: 1 1 0;
+  margin-top: 0;
+  min-height: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.progress .progress_step:not(:first-child)::before {
+  background: map-get($main, "main");
+  content: "";
+  height: 2px;
+  left: -50%;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+
+.progress .progress_step a {
+  color: map-get($main, "main");
+  display: inline-block;
+  padding: 20px 10px 0;
+  text-decoration: none;
+}
+
+.progress .progress_step a::before {
+  background: map-get($main, "main");
+  border: .1rem solid map-get($main, "main-lightest");
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: .6rem;
+  left: 50%;
+  position: absolute;
+  top: .2rem;
+  transform: translateX(-50%);
+  width: .6rem;
+  z-index: 1;
+}
+
+.progress .progress_step.active a::before {
+  background: #fff;
+  border: .1rem solid map-get($main, "main");
+}
+
+.progress .progress_step.active ~ .progress_step::before {
+  background: #dadee4;
+}
+
+.progress .progress_step.active ~ .progress_step a {
+  color: #bcc3ce;
+}
+
+.progress .progress_step.active ~ .progress_step a::before {
+  background: #dadee4;
+}

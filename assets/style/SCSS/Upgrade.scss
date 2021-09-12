@@ -23,6 +23,9 @@
 @import "utilities/components/popup";
 @import "utilities/components/tooltip";
 @import "utilities/components/placeholder";
+@import "utilities/components/blank";
+@import "utilities/components/progress";
+@import "utilities/components/tabs"; /* TODO */
 
 @import "utilities/components/forms/input";
 
@@ -33,6 +36,10 @@
   margin: 0;
   padding: 0;
   @extend .fc-white-darker;
+}
+
+::before, ::after {
+  box-sizing: inherit;
 }
 
 :root {

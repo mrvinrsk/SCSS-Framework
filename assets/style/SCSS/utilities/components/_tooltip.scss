@@ -4,7 +4,6 @@
 @import "../borders";
 
 .tooltip-wrapper {
-  position: relative;
   cursor: help;
 
   &:hover {
@@ -15,7 +14,7 @@
 
   .tooltip {
     display: none;
-    z-index: 50;
+    z-index: 99;
 
     max-width: 30vw;
 
