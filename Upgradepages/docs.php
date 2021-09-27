@@ -37,13 +37,13 @@ function getColorVariationInformation($class)
 
         <section class="alert-warning mb-5 mb-lg-8">
             Soon you may find a complete documentation of this framework here. 😎<br/>
-            <span id="funfact"></span>
+            <span data-local-href="funfact"></span>
         </section>
 
         <div class="d-flex flex-d-column gy-5 gy-lg-10">
-            <section>
+            <section id="accordions">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="accordions">Accordions</p>
+                    <p class="heading local_redirect" data-local-href="accordions">Accordions</p>
                     <p class="description">
                         Accordions are simple boxes with a summary and a longer text within it. When you click on an
                         accordion
@@ -84,9 +84,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="alerts">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="alerts">Alerts</p>
+                    <p class="heading local_redirect" data-local-href="alerts">Alerts</p>
                     <p class="description">
                         Alerts are a practical way to inform the user of your website about completed processes, errors,
                         or
@@ -108,9 +108,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="badges">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="badges">Badges</p>
+                    <p class="heading local_redirect" data-local-href="badges">Badges</p>
                     <p class="description">
                         Badges are a great way to display, for example, new features.
                     </p>
@@ -125,9 +125,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="buttons">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="buttons">Buttons</p>
+                    <p class="heading local_redirect" data-local-href="buttons">Buttons</p>
                     <p class="description">
                         Well I guess I don't have to explain what a button is...
                     </p>
@@ -150,9 +150,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="simple-buttons">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="simple-buttons">Simple Buttons</p>
+                    <p class="heading local_redirect" data-local-href="simple-buttons">Simple Buttons</p>
                     <p class="description">
                         Well I guess I don't have to explain what a button is...
                     </p>
@@ -169,9 +169,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="cards">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="cards">Cards</p>
+                    <p class="heading local_redirect" data-local-href="cards">Cards</p>
                     <p class="description">
                         A simple design element to display information.
                     </p>
@@ -195,7 +195,7 @@ function getColorVariationInformation($class)
 
                             <hr/>
 
-                            <div class="card__links" id="card__links">
+                            <div class="card__links" data-local-href="card__links">
                                 <a href="#card__links">Link</a>
                                 <a href="#card__links">Link</a>
                             </div>
@@ -218,9 +218,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="diagonal-sections">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="diagonal-sections">Diagonal Sections</p>
+                    <p class="heading local_redirect" data-local-href="diagonal-sections">Diagonal Sections</p>
                     <p class="description">
                         Create fancy diagonal layouts like its 2020.
                     </p>
@@ -259,9 +259,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="image-cards">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="image-cards">Image Cards</p>
+                    <p class="heading local_redirect" data-local-href="image-cards">Image Cards</p>
                     <p class="description">
                         An alternative for <a href="#cards" class="fs-underline"><code>card</code></a>'s whose focus
                         lays on
@@ -291,7 +291,7 @@ function getColorVariationInformation($class)
                                 et explicabo possimus qui rerum similique vero?
                             </p>
 
-                            <div id="specs" class="mt-1">
+                            <div data-local-href="specs" class="mt-1">
                                 <div class="spec">
                                     <p class="spec-key">Key</p>
                                     <p class="spec-value">Value</p>
@@ -302,7 +302,8 @@ function getColorVariationInformation($class)
                                 </div>
                             </div>
 
-                            <a href="#image-card-link" id="image-card-link" class="image-card__slide__link">Button</a>
+                            <a href="#image-card-link" data-local-href="image-card-link"
+                               class="image-card__slide__link">Button</a>
                         </div>
                     </div>
                 </div>
@@ -320,7 +321,7 @@ function getColorVariationInformation($class)
             et explicabo possimus qui rerum similique vero?
         &lt;/p&gt;
 
-        &lt;div id="specs" class="mt-1"&gt;
+        &lt;div data-local-href="specs" class="mt-1"&gt;
             &lt;div class="spec"&gt;
                 &lt;p class="spec-key"&gt;Key&lt;/p&gt;
                 &lt;p class="spec-value"&gt;Value&lt;/p&gt;
@@ -331,22 +332,22 @@ function getColorVariationInformation($class)
             &lt;/div&gt;
         &lt;/div&gt;
 
-        &lt;a href="#image-card-link" id="image-card-link" class="image-card__slide__link"&gt;Button&lt;/a&gt;
+        &lt;a href="#image-card-link" data-local-href="image-card-link" class="image-card__slide__link"&gt;Button&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
             </section>
 
-            <section>
+            <section id="popups">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="popups">Popups</p>
+                    <p class="heading local_redirect" data-local-href="popups">Popups</p>
                     <p class="description">
                         *plop*
                     </p>
                 </div>
 
                 <div class="example">
-                    <div class="popup__wrapper" id="demo_popup">
+                    <div class="popup__wrapper" data-local-href="demo_popup">
                         <div class="popup bg-white-darker">
                             <p class="popup__title">Lorem ipsum dolor sit amet,
                                 consectetur.</p>
@@ -368,7 +369,7 @@ function getColorVariationInformation($class)
                 </div>
 
                 <div class="code mt-2 mt-lg-3">
-                <pre><code>&lt;div class="popup__wrapper" id="demo_popup_"&gt;
+                <pre><code>&lt;div class="popup__wrapper" data-local-href="demo_popup_"&gt;
     &lt;div class="popup bg-white-darker"&gt;
         &lt;p class="popup__title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
         &lt;p class="fc-dark-light popup__description"&gt;
@@ -387,9 +388,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="tooltips">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="tooltips">Tooltips</p>
+                    <p class="heading local_redirect" data-local-href="tooltips">Tooltips</p>
                     <p class="description">
                         Great for explaining.
                     </p>
@@ -426,9 +427,9 @@ function getColorVariationInformation($class)
                 </div>
             </section>
 
-            <section>
+            <section id="placeholders">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="placeholders">Placeholders</p>
+                    <p class="heading local_redirect" data-local-href="placeholders">Placeholders</p>
                     <p class="description">
                         You can use placeholders for content that isn't loaded yet.
                     </p>
@@ -448,7 +449,7 @@ function getColorVariationInformation($class)
 
                             <hr/>
 
-                            <div class="card__links" id="card__links_2">
+                            <div class="card__links" data-local-href="card__links_2">
                                 <a href="#card__links_2" class="placeholder"></a>
                                 <a href="#card__links_2" class="placeholder"></a>
                             </div>
@@ -466,7 +467,7 @@ function getColorVariationInformation($class)
 
         &lt;hr/&gt;
 
-        &lt;div class="card__links" id="card__links_2"&gt;
+        &lt;div class="card__links" data-local-href="card__links_2"&gt;
             &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
             &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
         &lt;/div&gt;
@@ -474,9 +475,9 @@ function getColorVariationInformation($class)
 &lt;/div&gt;</code></pre>
             </section>
 
-            <section>
+            <section id="blank">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="blank">Blank</p>
+                    <p class="heading local_redirect" data-local-href="blank">Blank</p>
                     <p class="description">
                         Yes, the framework also provides extra components for missing data.
                     </p>
@@ -511,44 +512,92 @@ function getColorVariationInformation($class)
 &lt;/div&gt;</code></pre>
             </section>
 
-            <section>
+            <section id="progress">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" id="progress">Progress</p>
+                    <p class="heading local_redirect" data-local-href="progress">Progress</p>
                     <p class="description">
                         Perfect for displaying the current status of a payment transaction.
                     </p>
                 </div>
 
                 <div class="example">
-                    <ul class="progress" id="steps">
+                    <ul class="progress" data-local-href="steps">
                         <li class="progress_step">
-                            <a href="#steps">Step 1</a>
+                            <a href="#steps">Order summary</a>
                         </li>
 
                         <li class="progress_step active">
-                            <a href="#steps">Step 2</a>
+                            <a href="#steps">Payment</a>
                         </li>
 
                         <li class="progress_step">
-                            <a href="#steps">Step 3</a>
+                            <a href="#steps">Confirmation</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="code mt-2 mt-lg-3">
-                <pre><code>&lt;ul class="progress" id="steps"&gt;
+                <pre><code>&lt;ul class="progress" data-local-href="steps"&gt;
     &lt;li class="progress_step"&gt;
-        &lt;a href="#steps"&gt;Step 1&lt;/a&gt;
+        &lt;a href="#steps"&gt;Order summary&lt;/a&gt;
     &lt;/li&gt;
 
     &lt;li class="progress_step active"&gt;
-        &lt;a href="#steps"&gt;Step 2&lt;/a&gt;
+        &lt;a href="#steps"&gt;Payment&lt;/a&gt;
     &lt;/li&gt;
 
     &lt;li class="progress_step"&gt;
-        &lt;a href="#steps"&gt;Step 3&lt;/a&gt;
+        &lt;a href="#steps"&gt;Confirmation&lt;/a&gt;
     &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+            </section>
+
+            <section id="input">
+                <div class="mb-2 mb-lg-4">
+                    <p class="heading local_redirect" data-local-href="input">Input</p>
+                    <p class="description">
+                        Yeah... it's used for forms.
+                    </p>
+
+                    <?php echo getAlert('info', getColorVariationInformation('form-input')); ?>
+                </div>
+
+                <div class="example">
+                    <form class="d-flex flex-d-column gy-2 gy-lg-4">
+                        <div class="form-input-warning">
+                            <label for="input1">Input #1</label>
+                            <input type="text" id="input1">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="input2">Input #2</label>
+                            <input type="text" id="input2">
+                        </div>
+
+                        <div class="form-input-error">
+                            <label for="textarea">Textarea</label>
+                            <textarea id="textarea"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;form&gt;
+    &lt;div class="form-input-warning mb-2"&gt;
+        &lt;label for="input1"&gt;Input #1&lt;/label&gt;
+        &lt;input type="text" data-local-href="input1"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-input"&gt;
+        &lt;label for="input1"&gt;Input #2&lt;/label&gt;
+        &lt;input type="text" data-local-href="input2"&gt;
+    &lt;/div&gt;
+                        
+    &lt;div class="form-input-error"&gt;
+        &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+        &lt;textarea id="textarea"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
             </section>
 
 
@@ -562,6 +611,7 @@ function getColorVariationInformation($class)
         'This page is made using only Upgrade.',
         'You\'ve found an easter egg, congratulations!'
     );
+
     document.getElementById('funfact').innerText = facts[Math.floor(Math.random() * facts.length)];
 </script>
 

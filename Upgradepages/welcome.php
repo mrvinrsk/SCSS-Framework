@@ -12,17 +12,14 @@
 <?php include_once "./assets/elements/navigator.html"; ?>
 
 <main>
-    <div class="py-5 py-lg-10 fa-center">
+    <div class="py-10 py-lg-14 fa-center container-md">
         <div class="mb-2 mb-lg-4">
-            <p class="heading">Welcome to Upgrade</p>
-            <p class="fsi-large">Upgrades, people... <b>Upgrades!</b></p>
+            <p class="heading fsi-larger fsi-sm-xl">Welcome to Upgrade</p>
+            <p class="fsi-regular fsi-sm-larger">Upgrades, people... <b>Upgrades!</b></p>
         </div>
-        <p class="fsi-regular fc-main-dark">
-            Upgrade is your simple (S)CSS Framework for finishing your Website-Design faster.
-        </p>
     </div>
 
-    <div class="diagonal_section-main">
+    <section class="diagonal_section-main">
         <div class="container-lg">
             <div class="tooltip-wrapper">
                 <p class="heading fc-main-darker">What is this page?</p>
@@ -37,7 +34,19 @@
                 documentation and the changelog from here.
             </p>
         </div>
-    </div>
+    </section>
+
+    <section class="diagonal_section-dark-darker">
+        <div class="container-lg">
+            <p class="heading fc-main-darker">What is Upgrade?</p>
+
+            <p class="fsi-regular fa-justify fc-white-darker">
+                Upgrade (S)CSS is a CSS design framework that has been developed by Marvin Roßkothen as a hobby since
+                2021. Originally planned for private use only, it was decided relatively quickly to make the framework
+                available to other people via NPM.
+            </p>
+        </div>
+    </section>
 </main>
 
 </body>

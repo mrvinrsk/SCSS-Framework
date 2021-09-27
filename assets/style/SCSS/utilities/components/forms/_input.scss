@@ -1,6 +1,7 @@
 @import "../../spacing";
 @import "../../borders";
 @import "../../font";
+@import "../../colors";
 
 /* STANDARD */
 .form-input {
@@ -22,7 +23,7 @@
   }
 
   &:hover, &:focus-within {
-    @extend .bg-main-lighter;
+    background-color: transparentize(lighten(map-get($main, "main-light"), 15), .75);
 
     @extend .border-main;
 
@@ -69,7 +70,7 @@
     transition-duration: .225s;
 
     &:focus {
-      @extend .fc-main-darkest;
+      @extend .fc-main-darker;
     }
 
     &::selection {
@@ -79,5 +80,39 @@
 
   textarea {
     resize: vertical;
+    font-family: inherit;
+    transition: resize 0s;
+    min-height: 10vh;
+    max-height: 45vh;
+  }
+}
+
+@include eachColor() using($name, $color) {
+  html body .form-input-#{$name} {
+    @extend .form-input;
+    color: $color;
+
+    &:hover, &:focus-within {
+      background-color: transparentize(lighten($color, 5), .425);
+
+      @extend .border-#{$name};
+
+      label {
+        @extend .fc-dark-darker;
+      }
+    }
+
+    input, textarea {
+      color: $color !important;
+      font-family: inherit;
+
+      &:focus {
+        color: darken($color, 25) !important;
+      }
+
+      &::selection {
+        background-color: transparentize(lighten($color, 15), .75);
+      }
+    }
   }
 }

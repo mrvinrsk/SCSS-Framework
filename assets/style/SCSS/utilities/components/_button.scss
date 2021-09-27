@@ -96,10 +96,6 @@ $animationDuration: .325s;
         border: none;
         background-color: $value;
       }
-
-      &:hover {
-        border: 1px solid transparentize($value, 1);
-      }
     }
   }
 

@@ -23,35 +23,45 @@
   height: 2px;
   left: -50%;
   position: absolute;
-  top: 7px;
+  top: 8px;
   width: 100%;
 }
 
 .progress .progress_step a {
   color: map-get($main, "main");
   display: inline-block;
-  padding: 20px 10px 0;
+  padding: 20px 20px 7px;
   text-decoration: none;
+  transition-duration: .25s;
+}
+
+.progress .progress_step a:hover {
+  background-color: transparentize(map-get($main, "main-lightest"), .75);
+  border-radius: 3px;
 }
 
 .progress .progress_step a::before {
   background: map-get($main, "main");
-  border: .1rem solid map-get($main, "main-lightest");
+  border: .175rem solid map-get($main, "main-lightest");
   border-radius: 50%;
   content: "";
   display: block;
-  height: .6rem;
+  height: .825rem;
+  width: .825rem;
   left: 50%;
   position: absolute;
   top: .2rem;
   transform: translateX(-50%);
-  width: .6rem;
   z-index: 1;
+}
+
+.progress .progress_step.active a {
+  color: map-get($main, "main-dark");
 }
 
 .progress .progress_step.active a::before {
   background: #fff;
-  border: .1rem solid map-get($main, "main");
+  border: .175rem solid map-get($main, "main-dark");
 }
 
 .progress .progress_step.active ~ .progress_step::before {

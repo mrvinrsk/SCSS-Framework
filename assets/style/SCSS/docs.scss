@@ -11,6 +11,25 @@ section {
   border-radius: 10px;
 }
 
+*:target {
+  box-shadow: 0 0 15px rgba(255, 255, 255, .25);
+
+  animation-name: targetFade;
+  animation-duration: 2.5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes targetFade {
+  0% {
+    border: 3px solid map-get($main, "main");
+  }
+
+  100% {
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+}
+
 .example, .code {
   position: relative;
   width: 100%;
