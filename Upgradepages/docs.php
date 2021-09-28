@@ -21,12 +21,13 @@ function getAlert($color, $text)
 
 function getColorVariationInformation($class)
 {
-    $plural = $class;
-    if (!str_ends_with($plural, 's')) {
-        $plural .= 's';
-    }
+$plural = $class;
+if (!str_ends_with($plural, 's')) {
+$plural .= 's';
+}
 
-    return "You're able to tint $plural by simply using the $class-[COLOR] class instead of the $class class as seen as in the example below. [COLOR] has to be a color from Upgrades colorscheme.";
+return "You're able to tint $plural by simply using the $class-[COLOR] class instead of the $class class as seen as in
+the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 }
 
 ?>
@@ -600,6 +601,110 @@ function getColorVariationInformation($class)
 &lt;/form&gt;</code></pre>
             </section>
 
+            <section id="tabs">
+                <div class="mb-2 mb-lg-4">
+                    <p class="heading local_redirect" data-local-href="tabs">Tabs</p>
+                    <p class="description">
+                        Can be used for sorting information or something.
+                    </p>
+                </div>
+
+                <div class="example">
+                    <div class="tabs">
+                        <div class="tab-wrapper">
+                            <div class="tab fc-main" data-tab-toggle="1" data-tab-active>#1</div>
+                            <div class="tab fc-main" data-tab-toggle="2">#2</div>
+                            <div class="tab fc-main" data-tab-toggle="3">#3</div>
+                        </div>
+
+                        <div class="tab-panel" data-tab-listen="1" data-tab-active>
+                            <div class="tab-content">
+                                <h3>Dies ist Section #1</h3>
+                                <p class="fc-dark">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non
+                                    alias aut
+                                    dolores repudiandae nihil aliquam, suscipit exercitationem voluptas consequuntur
+                                    ratione iste
+                                    molestias quasi, voluptatum aspernatur magnam minus molestiae at quisquam! Dolorem
+                                    aut possimus
+                                    iste ducimus, eius repudiandae.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" data-tab-listen="2">
+                            <div class="tab-content">
+                                <h3>Dies ist Section #2</h3>
+                                <p class="fc-dark">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda,
+                                    commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto
+                                    minus modi officiis praesentium quibusdam recusandae reprehenderit sed unde ut vitae
+                                    voluptate voluptatum. Aperiam assumenda aut, cumque cupiditate eligendi fuga
+                                    inventore iure, neque nesciunt non sint ullam!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" data-tab-listen="3">
+                            <div class="tab-content">
+                                <h3>Dies ist Section #3</h3>
+                                <p class="fc-dark">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi
+                                    aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem
+                                    magni maiores modi molestiae molestias necessitatibus neque nesciunt obcaecati odit
+                                    quasi quos similique tempore vero voluptatum! Ab accusantium aliquid aspernatur ea
+                                    eos, excepturi fugit incidunt itaque, officiis porro recusandae rem sequi
+                                    voluptatibus? Consequuntur, dicta ex fugit minima molestias non reiciendis
+                                    repellendus. Ab aspernatur deserunt dolorem laudantium nesciunt numquam optio
+                                    repudiandae rerum sequi veniam. Accusantium cupiditate itaque quisquam similique!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code mt-2 mt-lg-3">
+                <pre><code>
+&lt;div class="tabs"&gt;
+                        &lt;div class="tab-wrapper"&gt;
+                            &lt;div class="tab" data-tab-toggle="1" data-tab-active&gt;#1&lt;/div&gt;
+                            &lt;div class="tab" data-tab-toggle="2"&gt;#2&lt;/div&gt;
+                            &lt;div class="tab" data-tab-toggle="3"&gt;#3&lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="tab-panel" data-tab-listen="1" data-tab-active&gt;
+                            &lt;div class="tab-content"&gt;
+                                &lt;h3&gt;Dies ist Section #1&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non alias aut
+                                    dolores repudiandae nihil aliquam, suscipit exercitationem voluptas consequuntur ratione iste
+                                    molestias quasi, voluptatum aspernatur magnam minus molestiae at quisquam! Dolorem aut possimus
+                                    iste ducimus, eius repudiandae.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="tab-panel" data-tab-listen="2"&gt;
+                            &lt;div class="tab-content"&gt;
+                                &lt;h3&gt;Dies ist Section #2&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda, commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto minus modi officiis praesentium quibusdam recusandae reprehenderit sed unde ut vitae voluptate voluptatum. Aperiam assumenda aut, cumque cupiditate eligendi fuga inventore iure, neque nesciunt non sint ullam!
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="tab-panel" data-tab-listen="3"&gt;
+                            &lt;div class="tab-content"&gt;
+                                &lt;h3&gt;Dies ist Section #3&lt;/h3&gt;
+                                &lt;p&gt;
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem magni maiores modi molestiae molestias necessitatibus neque nesciunt obcaecati odit quasi quos similique tempore vero voluptatum! Ab accusantium aliquid aspernatur ea eos, excepturi fugit incidunt itaque, officiis porro recusandae rem sequi voluptatibus? Consequuntur, dicta ex fugit minima molestias non reiciendis repellendus. Ab aspernatur deserunt dolorem laudantium nesciunt numquam optio repudiandae rerum sequi veniam. Accusantium cupiditate itaque quisquam similique!
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code></pre>
+            </section>
+
 
             <div class="alert-gray-lightest mt-2 mt-lg-5">More documentation soon... 👋</div>
         </div>
@@ -608,11 +713,12 @@ function getColorVariationInformation($class)
 
 <script>
     const facts = Array(
-        'This page is made using only Upgrade.',
+        'Upgrade is made by Marvin Roßkothen',
+        'SLZ doesn\'t like CSS',
         'You\'ve found an easter egg, congratulations!'
     );
 
-    document.getElementById('funfact').innerText = facts[Math.floor(Math.random() * facts.length)];
+    //document.getElementById('funfact').innerText = facts[Math.floor(Math.random() * facts.length)];
 </script>
 
 </body>

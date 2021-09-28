@@ -3,6 +3,10 @@
 @import "../spacing";
 @import "../borders";
 
+* + .tooltip {
+  overflow: visible !important;
+}
+
 .tooltip-wrapper {
   cursor: help;
 
