@@ -38,7 +38,7 @@
   }
 }
 
-html body .accordion__toggle.opened {
+html body .accordion .accordion__toggle.opened {
   @extend .bg-main;
   @extend .fc-dark;
 

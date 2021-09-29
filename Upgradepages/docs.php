@@ -21,12 +21,12 @@ function getAlert($color, $text)
 
 function getColorVariationInformation($class)
 {
-$plural = $class;
-if (!str_ends_with($plural, 's')) {
-$plural .= 's';
-}
+    $plural = $class;
+    if (!str_ends_with($plural, 's')) {
+        $plural .= 's';
+    }
 
-return "You're able to tint $plural by simply using the $class-[COLOR] class instead of the $class class as seen as in
+    return "You're able to tint $plural by simply using the $class-[COLOR] class instead of the $class class as seen as in
 the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 }
 
@@ -666,43 +666,43 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 <div class="code mt-2 mt-lg-3">
                 <pre><code>
 &lt;div class="tabs"&gt;
-                        &lt;div class="tab-wrapper"&gt;
-                            &lt;div class="tab" data-tab-toggle="1" data-tab-active&gt;#1&lt;/div&gt;
-                            &lt;div class="tab" data-tab-toggle="2"&gt;#2&lt;/div&gt;
-                            &lt;div class="tab" data-tab-toggle="3"&gt;#3&lt;/div&gt;
-                        &lt;/div&gt;
+    &lt;div class="tab-wrapper"&gt;
+        &lt;div class="tab" data-tab-toggle="1" data-tab-active&gt;#1&lt;/div&gt;
+        &lt;div class="tab" data-tab-toggle="2"&gt;#2&lt;/div&gt;
+        &lt;div class="tab" data-tab-toggle="3"&gt;#3&lt;/div&gt;
+    &lt;/div&gt;
 
-                        &lt;div class="tab-panel" data-tab-listen="1" data-tab-active&gt;
-                            &lt;div class="tab-content"&gt;
-                                &lt;h3&gt;Dies ist Section #1&lt;/h3&gt;
-                                &lt;p&gt;
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non alias aut
-                                    dolores repudiandae nihil aliquam, suscipit exercitationem voluptas consequuntur ratione iste
-                                    molestias quasi, voluptatum aspernatur magnam minus molestiae at quisquam! Dolorem aut possimus
-                                    iste ducimus, eius repudiandae.
-                                &lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+    &lt;div class="tab-panel" data-tab-listen="1" data-tab-active&gt;
+        &lt;div class="tab-content"&gt;
+            &lt;h3&gt;Dies ist Section #1&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non alias aut
+                dolores repudiandae nihil aliquam, suscipit exercitationem voluptas consequuntur ratione iste
+                molestias quasi, voluptatum aspernatur magnam minus molestiae at quisquam! Dolorem aut possimus
+                iste ducimus, eius repudiandae.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-                        &lt;div class="tab-panel" data-tab-listen="2"&gt;
-                            &lt;div class="tab-content"&gt;
-                                &lt;h3&gt;Dies ist Section #2&lt;/h3&gt;
-                                &lt;p&gt;
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda, commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto minus modi officiis praesentium quibusdam recusandae reprehenderit sed unde ut vitae voluptate voluptatum. Aperiam assumenda aut, cumque cupiditate eligendi fuga inventore iure, neque nesciunt non sint ullam!
-                                &lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+    &lt;div class="tab-panel" data-tab-listen="2"&gt;
+        &lt;div class="tab-content"&gt;
+            &lt;h3&gt;Dies ist Section #2&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda, commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto minus modi officiis praesentium quibusdam recusandae reprehenderit sed unde ut vitae voluptate voluptatum. Aperiam assumenda aut, cumque cupiditate eligendi fuga inventore iure, neque nesciunt non sint ullam!
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-                        &lt;div class="tab-panel" data-tab-listen="3"&gt;
-                            &lt;div class="tab-content"&gt;
-                                &lt;h3&gt;Dies ist Section #3&lt;/h3&gt;
-                                &lt;p&gt;
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem magni maiores modi molestiae molestias necessitatibus neque nesciunt obcaecati odit quasi quos similique tempore vero voluptatum! Ab accusantium aliquid aspernatur ea eos, excepturi fugit incidunt itaque, officiis porro recusandae rem sequi voluptatibus? Consequuntur, dicta ex fugit minima molestias non reiciendis repellendus. Ab aspernatur deserunt dolorem laudantium nesciunt numquam optio repudiandae rerum sequi veniam. Accusantium cupiditate itaque quisquam similique!
-                                &lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                    </code></pre>
+    &lt;div class="tab-panel" data-tab-listen="3"&gt;
+        &lt;div class="tab-content"&gt;
+            &lt;h3&gt;Dies ist Section #3&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem magni maiores modi molestiae molestias necessitatibus neque nesciunt obcaecati odit quasi quos similique tempore vero voluptatum! Ab accusantium aliquid aspernatur ea eos, excepturi fugit incidunt itaque, officiis porro recusandae rem sequi voluptatibus? Consequuntur, dicta ex fugit minima molestias non reiciendis repellendus. Ab aspernatur deserunt dolorem laudantium nesciunt numquam optio repudiandae rerum sequi veniam. Accusantium cupiditate itaque quisquam similique!
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
             </section>
 
 
