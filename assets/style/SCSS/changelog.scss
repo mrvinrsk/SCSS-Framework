@@ -1,0 +1,24 @@
+@import "utilities/colors";
+@import "utilities/font";
+@import "utilities/borders";
+@import "utilities/spacing";
+
+.heading {
+  @extend .fc-white-darker;
+}
+
+.wrapper {
+  @extend .border-radius-2;
+  @extend .px-3;
+  @extend .px-lg-5;
+  @extend .py-2;
+  @extend .py-lg-3;
+}
+
+.fas {
+  margin-right: .65rem;
+}
+
+ul {
+  margin: .5rem 2.75rem 0;
+}

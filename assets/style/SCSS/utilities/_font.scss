@@ -2,7 +2,7 @@
 @import "colors";
 
 /* Texts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
 
 pre, code {
@@ -31,10 +31,10 @@ $sizes: (
         "regular": 1.175rem,
         "large": 1.35rem,
         "larger": 1.65rem,
-        "largest": 2rem,
-        "xl": 3rem,
-        "2xl": 4rem,
-        "3xl": 5rem
+        "largest": 1.875rem,
+        "xl": 2.5rem,
+        "2xl": 3.75rem,
+        "3xl": 4.5rem
 );
 
 @each $name, $size in $sizes {
@@ -60,12 +60,12 @@ $sizes: (
 }
 
 .fc-invert {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   mix-blend-mode: difference;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Livvic', sans-serif;
   @extend .fw-bold;
   @extend .fsi-largest;
   @extend .fc-main;
@@ -89,15 +89,15 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 :root {
-  font-family: 'Urbanist', serif;
+  font-family: 'K2D', serif;
   @extend .fsi-regular;
   @extend .fw-regular;
   @extend .fc-gray-lightest;
 }
 
 
-$alignments:(
-left, center, right, justify
+$alignments: (
+        left, center, right, justify
 );
 
 .fa-left {
