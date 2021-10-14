@@ -33724,7 +33724,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #fca581;
   border: 1px solid #ff8047;
@@ -33733,7 +33733,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ff8047;
   background-color: rgba(255, 181, 148, 0.25);
@@ -33743,7 +33743,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ff6b2d;
   background-color: rgba(255, 161, 122, 0.25);
@@ -33753,7 +33753,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #fc5102;
   background-color: rgba(254, 133, 77, 0.25);
@@ -33763,7 +33763,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #b43800;
   background-color: rgba(255, 80, 2, 0.25);
@@ -33773,7 +33773,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #8b2c01;
   background-color: rgba(215, 68, 2, 0.25);
@@ -33783,7 +33783,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-main-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #611e00;
   background-color: rgba(174, 54, 0, 0.25);
@@ -33793,7 +33793,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-white {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #FFF;
   border: 1px solid #EEE;
@@ -33802,7 +33802,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-white-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #EEE;
   background-color: rgba(255, 255, 255, 0.25);
@@ -33812,7 +33812,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #d5d5d5;
   background-color: rgba(251, 251, 251, 0.25);
@@ -33822,7 +33822,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #b5b5b5;
   background-color: rgba(219, 219, 219, 0.25);
@@ -33832,7 +33832,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #909090;
   background-color: rgba(182, 182, 182, 0.25);
@@ -33842,7 +33842,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #323232;
   background-color: rgba(88, 88, 88, 0.25);
@@ -33852,7 +33852,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #202020;
   background-color: rgba(70, 70, 70, 0.25);
@@ -33862,7 +33862,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #151515;
   background-color: rgba(59, 59, 59, 0.25);
@@ -33872,7 +33872,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-gray-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #101010;
   background-color: rgba(54, 54, 54, 0.25);
@@ -33882,7 +33882,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #5cfa50;
   border: 1px solid #10d900;
@@ -33891,7 +33891,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #10d900;
   background-color: rgba(54, 255, 39, 0.25);
@@ -33901,7 +33901,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #0ca800;
   background-color: rgba(17, 245, 0, 0.25);
@@ -33911,7 +33911,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #0c8700;
   background-color: rgba(19, 212, 0, 0.25);
@@ -33921,7 +33921,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #0b6800;
   background-color: rgba(19, 181, 0, 0.25);
@@ -33931,7 +33931,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #055300;
   background-color: rgba(10, 160, 0, 0.25);
@@ -33941,7 +33941,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-success-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #033800;
   background-color: rgba(7, 133, 0, 0.25);
@@ -33951,7 +33951,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ffe46a;
   border: 1px solid #ffde47;
@@ -33960,7 +33960,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ffde47;
   background-color: rgba(255, 236, 148, 0.25);
@@ -33970,7 +33970,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #fdd92c;
   background-color: rgba(254, 231, 120, 0.25);
@@ -33980,7 +33980,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ffd500;
   background-color: rgba(255, 226, 77, 0.25);
@@ -33990,7 +33990,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #bfa000;
   background-color: rgba(255, 216, 13, 0.25);
@@ -34000,7 +34000,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #937b00;
   background-color: rgba(224, 187, 0, 0.25);
@@ -34010,7 +34010,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-warning-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #6d5d00;
   background-color: rgba(186, 158, 0, 0.25);
@@ -34020,7 +34020,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ef7373;
   background-color: rgba(247, 184, 184, 0.25);
@@ -34030,7 +34030,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #ec4f4f;
   background-color: rgba(243, 148, 148, 0.25);
@@ -34040,7 +34040,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #e83131;
   background-color: rgba(240, 118, 118, 0.25);
@@ -34050,7 +34050,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #e21b1b;
   background-color: rgba(236, 94, 94, 0.25);
@@ -34060,7 +34060,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #b60b0b;
   background-color: rgba(241, 28, 28, 0.25);
@@ -34070,7 +34070,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #850606;
   background-color: rgba(206, 9, 9, 0.25);
@@ -34080,7 +34080,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-error-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #5e0303;
   background-color: rgba(168, 5, 5, 0.25);
@@ -34090,7 +34090,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #44cae5;
   border: 1px solid #21b8d7;
@@ -34099,7 +34099,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #21b8d7;
   background-color: rgba(94, 207, 230, 0.25);
@@ -34109,7 +34109,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #09a3c2;
   background-color: rgba(35, 210, 245, 0.25);
@@ -34119,7 +34119,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #048fab;
   background-color: rgba(6, 206, 246, 0.25);
@@ -34129,7 +34129,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #037286;
   background-color: rgba(5, 178, 209, 0.25);
@@ -34139,7 +34139,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #015869;
   background-color: rgba(2, 152, 181, 0.25);
@@ -34149,7 +34149,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-info-darkest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #014b4b;
   background-color: rgba(2, 150, 150, 0.25);
@@ -34159,7 +34159,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-dark-lightest {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #555555;
   border: 1px solid #444444;
@@ -34168,7 +34168,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-dark-lighter {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #444444;
   background-color: rgba(106, 106, 106, 0.25);
@@ -34178,7 +34178,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-dark-light {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #333333;
   background-color: rgba(89, 89, 89, 0.25);
@@ -34188,7 +34188,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-dark {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #202020;
   background-color: rgba(70, 70, 70, 0.25);
@@ -34198,7 +34198,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-dark-darker {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #111111;
   background-color: rgba(55, 55, 55, 0.25);
@@ -34208,7 +34208,7 @@ body .border-radius-round, body .dot, body .dot-black, body .dot-dark-darker, bo
 .badge-black {
   display: inline-block;
   margin: 0 0.5rem;
-  font-size: calc(100% - 0.325rem);
+  font-size: calc(100% - .325rem);
   padding: 0.165rem 0.5rem;
   color: #000;
   background-color: rgba(38, 38, 38, 0.25);
