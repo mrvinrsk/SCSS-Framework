@@ -61490,7 +61490,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
 }
 
@@ -72170,7 +72170,7 @@ body .border-radius-round, body .dot, body .dot-main-lightest, body .dot-main-li
 }
 .tooltip-wrapper .tooltip {
   display: none;
-  z-index: 99;
+  z-index: 200;
   max-width: 30vw;
   position: absolute;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);

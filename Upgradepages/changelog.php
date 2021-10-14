@@ -32,6 +32,7 @@
 
         <ul>
             <li>Selections in form-inputs are now finally right colored.</li>
+            <li>The darkening of the background when a popup is open is now stronger.</li>
         </ul>
     </div>
 
