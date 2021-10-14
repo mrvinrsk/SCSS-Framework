@@ -44,7 +44,8 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
         <div class="d-flex flex-d-column gy-5 gy-lg-10">
             <section id="accordions">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" data-local-href="accordions">Accordions</p>
+                    <p class="heading local_redirect" data-local-href="accordions" data-needs-js>
+                        Accordions</p>
                     <p class="description">
                         Accordions are simple boxes with a summary and a longer text within it. When you click on an
                         accordion
@@ -341,14 +342,14 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
             <section id="popups">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" data-local-href="popups">Popups</p>
+                    <p class="heading local_redirect" data-local-href="popups" data-needs-js>Popups</p>
                     <p class="description">
                         *plop*
                     </p>
                 </div>
 
                 <div class="example">
-                    <div class="popup__wrapper" data-local-href="demo_popup">
+                    <div class="popup__wrapper" id="demo_popup">
                         <div class="popup bg-white-darker">
                             <p class="popup__title">Lorem ipsum dolor sit amet,
                                 consectetur.</p>
@@ -603,7 +604,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
             <section id="tabs">
                 <div class="mb-2 mb-lg-4">
-                    <p class="heading local_redirect" data-local-href="tabs">Tabs</p>
+                    <p class="heading local_redirect" data-local-href="tabs" data-needs-js>Tabs</p>
                     <p class="description">
                         Can be used for sorting information or something.
                     </p>
@@ -619,7 +620,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                         <div class="tab-panel" data-tab-listen="1" data-tab-active>
                             <div class="tab-content">
-                                <h3>Dies ist Section #1</h3>
+                                <h3>This is the first section.</h3>
                                 <p class="fc-dark">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non
                                     alias aut
@@ -634,7 +635,8 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                         <div class="tab-panel" data-tab-listen="2">
                             <div class="tab-content">
-                                <h3>Dies ist Section #2</h3>
+                                <h3>This is the second section.</h3>
+
                                 <p class="fc-dark">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda,
                                     commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto
@@ -647,7 +649,9 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                         <div class="tab-panel" data-tab-listen="3">
                             <div class="tab-content">
-                                <h3>Dies ist Section #3</h3>
+                                <h3>This is the third section.</h3>
+                                <img src="https://via.placeholder.com/1280x720" class="mt-1 mt-lg-3"
+                                     style="object-fit: cover; width: 100%; height: 100%; border-radius: 5px;">
                                 <p class="fc-dark">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi
                                     aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem
@@ -674,7 +678,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
     &lt;div class="tab-panel" data-tab-listen="1" data-tab-active&gt;
         &lt;div class="tab-content"&gt;
-            &lt;h3&gt;Dies ist Section #1&lt;/h3&gt;
+            &lt;h3&gt;This is the first section.&lt;/h3&gt;
             &lt;p&gt;
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat debitis non alias aut
                 dolores repudiandae nihil aliquam, suscipit exercitationem voluptas consequuntur ratione iste
@@ -686,7 +690,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
     &lt;div class="tab-panel" data-tab-listen="2"&gt;
         &lt;div class="tab-content"&gt;
-            &lt;h3&gt;Dies ist Section #2&lt;/h3&gt;
+            &lt;h3&gt;This is the second section.&lt;/h3&gt;
             &lt;p&gt;
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi assumenda, commodi consequatur cum delectus dignissimos doloremque eius hic id illum in iusto minus modi officiis praesentium quibusdam recusandae reprehenderit sed unde ut vitae voluptate voluptatum. Aperiam assumenda aut, cumque cupiditate eligendi fuga inventore iure, neque nesciunt non sint ullam!
             &lt;/p&gt;
@@ -695,7 +699,9 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
     &lt;div class="tab-panel" data-tab-listen="3"&gt;
         &lt;div class="tab-content"&gt;
-            &lt;h3&gt;Dies ist Section #3&lt;/h3&gt;
+            &lt;h3&gt;This is the third section.&lt;/h3&gt;
+            &lt;img src="https://via.placeholder.com/1280x720" class="mt-1 mt-lg-3"
+                             style="object-fit: cover; width: 100%; height: 100%; border-radius: 5px;"&gt;
             &lt;p&gt;
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet animi aspernatur assumenda autem, deserunt dolores ea eligendi, est et exercitationem magni maiores modi molestiae molestias necessitatibus neque nesciunt obcaecati odit quasi quos similique tempore vero voluptatum! Ab accusantium aliquid aspernatur ea eos, excepturi fugit incidunt itaque, officiis porro recusandae rem sequi voluptatibus? Consequuntur, dicta ex fugit minima molestias non reiciendis repellendus. Ab aspernatur deserunt dolorem laudantium nesciunt numquam optio repudiandae rerum sequi veniam. Accusantium cupiditate itaque quisquam similique!
             &lt;/p&gt;
@@ -719,6 +725,13 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
     );
 
     //document.getElementById('funfact').innerText = facts[Math.floor(Math.random() * facts.length)];
+
+    document.querySelectorAll('section p.heading').forEach(function (node) {
+        if ("needsJs" in node.dataset) {
+            var html = node.outerHTML;
+            node.outerHTML = "<div class='requireJS'>" + html + " <div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-light'>JavaScript</span><div class='tooltip tooltip-dark'><p class='tooltip-title'>Requires JavaScript</p><p class='tooltip-description'>If you plan to use this feature you have to import the framework.js file located in <code>assets/js</code> using a script tag with defer attribute.</p></div></div></div>"
+        }
+    });
 </script>
 
 </body>

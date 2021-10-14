@@ -217,6 +217,12 @@ section {
   animation-fill-mode: forwards;
 }
 
+.requireJS {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
 @keyframes targetFade {
   0% {
     border: 3px solid #fc5102;

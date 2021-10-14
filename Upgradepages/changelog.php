@@ -9,6 +9,7 @@
 
     <script src="../assets/js/framework.js" defer></script>
     <script src="https://kit.fontawesome.com/d2e7155937.js" crossorigin="anonymous"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,10 @@
         <p class="heading-large fw-bold"><i class="fas fa-plus fsi-small"></i>Added</p>
 
         <ul>
-            <li>Changelog is finally in use now.</li>
+            <li>
+                Design elements whose functionality requires the JavaScript framework are now marked with a badge in the
+                documentation.
+            </li>
         </ul>
     </div>
 
@@ -27,18 +31,30 @@
         <p class="heading-large fw-bold"><i class="fas fa-pen fsi-small"></i>Changed</p>
 
         <ul>
-            <li>Accordion Borders are now working as intended.</li>
+            <li>Selections in form-inputs are now finally right colored.</li>
         </ul>
     </div>
 
     <div class="wrapper bg-error" id="removed">
         <p class="heading-large fw-bold"><i class="fas fa-minus fsi-small"></i>Removed</p>
 
-        <ul>
-            <li>-</li>
-        </ul>
+        <div class="blank mt-2 mt-lg-4">
+            <i class="fas fa-times-circle blank__icon fsi-xl"></i>
+
+            <p class="blank__title">Nothing</p>
+            <p class="blank__description">
+                Nothing was removed in this release.
+            </p>
+        </div>
     </div>
 </main>
+
+<script async>
+    const pj = requirejs(['../package.json'], function () {
+        console.log('loaded');
+    });
+    console.log(pj.version);
+</script>
 
 </body>
 </html>

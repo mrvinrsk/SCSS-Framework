@@ -23,12 +23,12 @@
   }
 
   &:hover, &:focus-within {
-    background-color: transparentize(lighten(map-get($main, "main-light"), 15), .75);
+    background-color: transparentize(darken(map-get($main, "main"), 15), .75);
 
     @extend .border-main;
 
     label {
-      @extend .fc-dark-darker;
+      @extend .fc-gray-lightest;
     }
   }
 
@@ -70,11 +70,12 @@
     transition-duration: .225s;
 
     &:focus {
-      @extend .fc-main-darker;
+      color: lighten(map-get($main, "main"), 30) !important;
     }
 
     &::selection {
-      @extend .bg-main-lightest;
+      background-color: transparentize(darken(map-get($main, "main"), 35), .2);
+      border-radius: 3px;
     }
   }
 
@@ -93,13 +94,9 @@
     color: $color;
 
     &:hover, &:focus-within {
-      background-color: transparentize(lighten($color, 5), .425);
+      background-color: transparentize(darken($color, 15), .75);
 
       @extend .border-#{$name};
-
-      label {
-        @extend .fc-dark-darker;
-      }
     }
 
     input, textarea {
@@ -107,11 +104,12 @@
       font-family: inherit;
 
       &:focus {
-        color: darken($color, 25) !important;
+        color: lighten($color, 30) !important;
       }
 
       &::selection {
-        background-color: transparentize(lighten($color, 15), .75);
+        background-color: transparentize(darken($color, 35), .2);
+        border-radius: 3px;
       }
     }
   }
