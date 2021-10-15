@@ -1,4 +1,5 @@
 @import "utilities/colors";
+@import "utilities/spacing";
 
 #funfact::before {
   content: 'Fun Fact: ';
@@ -6,7 +7,7 @@
 }
 
 section {
-  @extend .bg-gray-darker;
+  @extend .bg-gray;
   padding: 1rem 1.75rem;
   border-radius: 10px;
 }
@@ -40,9 +41,23 @@ section {
   position: relative;
   width: 100%;
   border-radius: 10px;
-  padding: 2.75rem 3.5rem 1.25rem;
+  padding: 3.5rem 4.5rem;
   overflow-x: auto;
+}
 
+.example {
+  border: 2px dashed map-get($main, "main-light");
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  @extend .mb-3;
+  @extend .mb-lg-6;
+}
+
+.code {
   @extend .bg-dark-lighter;
 }
 

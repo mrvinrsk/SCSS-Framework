@@ -9,6 +9,8 @@
 
     <script src="../assets/js/framework.js" defer></script>
     <script src="https://kit.fontawesome.com/a4ede3fed3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -185,7 +187,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="example">
-                    <div class="card" style="transform: translate(-50%, -0);left: 50%;">
+                    <div class="card">
                         <img src="https://via.placeholder.com/1280x720" class="card__image">
 
                         <div class="card__content">
@@ -280,7 +282,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="example">
-                    <div class="image-card" style="transform: translate(-50%, -0);left: 50%;">
+                    <div class="image-card">
                         <img src="https://via.placeholder.com/1280x720">
 
                         <p class="image-card__summary">Summary</p>
@@ -565,7 +567,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="example">
-                    <form class="d-flex flex-d-column gy-2 gy-lg-4">
+                    <form class="d-flex flex-d-column gy-2 gy-lg-4" style="width: 75%;">
                         <div class="form-input-warning">
                             <label for="input1">Input #1</label>
                             <input type="text" id="input1">

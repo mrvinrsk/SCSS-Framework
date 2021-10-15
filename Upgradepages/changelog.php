@@ -33,6 +33,7 @@
         <ul>
             <li>Selections in form-inputs are now finally right colored.</li>
             <li>The darkening of the background when a popup is open is now stronger.</li>
+            <li>Examples are now centered and have more margin at the bottom.</li>
         </ul>
     </div>
 
