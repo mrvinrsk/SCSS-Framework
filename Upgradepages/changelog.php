@@ -25,6 +25,7 @@
                 Design elements whose functionality requires the JavaScript framework are now marked with a badge in the
                 documentation.
             </li>
+            <li>Paths</li>
         </ul>
     </div>
 
