@@ -180,3 +180,23 @@ document.querySelectorAll('.tabs .tab').forEach(tab => {
         });
     }
 });
+
+
+/* Paths */
+document.querySelectorAll('.path').forEach(path => {
+    path.querySelectorAll('.path-element').forEach(el => {
+        if (el.nextElementSibling) {
+            let sep = '/';
+
+            if ("pathSeparator" in el.dataset) {
+                sep = el.dataset.pathSeparator;
+            } else if ("pathSeparator" in path.dataset) {
+                sep = path.dataset.pathSeparator;
+            }
+
+            el.outerHTML += '<span class="path-separator">' + sep + '</span>';
+        } else {
+            console.log('No Next');
+        }
+    });
+});

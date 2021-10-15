@@ -1,0 +1,14 @@
+@import "../font";
+
+.path {
+  display: inline-flex;
+  column-gap: .325rem;
+
+  .path-element {
+
+  }
+
+  .path-separator {
+    @extend .fc-gray-light;
+  }
+}
