@@ -53,6 +53,7 @@ section {
   align-items: center;
   align-content: center;
 
+  background-color: transparentize(map-get($gray, "gray-light"), .75);
   @extend .mb-3;
   @extend .mb-lg-6;
 }
