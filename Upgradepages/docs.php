@@ -409,10 +409,12 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                         <p>Hover me!</p>
 
                         <div class="tooltip">
-                            <p class="tooltip-title">Lorem ipsum dolor sit amet.</p>
-                            <p class="tooltip-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nulla?
-                            </p>
+                            <div class="tooltip-content">
+                                <p class="tooltip-title">Lorem ipsum dolor sit amet.</p>
+                                <p class="tooltip-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nulla?
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -731,7 +733,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
     document.querySelectorAll('section p.heading').forEach(function (node) {
         if ("needsJs" in node.dataset) {
             var html = node.outerHTML;
-            node.outerHTML = "<div class='requireJS'>" + html + " <div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-light'>JavaScript</span><div class='tooltip tooltip-dark'><p class='tooltip-title'>Requires JavaScript</p><p class='tooltip-description'>If you plan to use this feature you have to import the framework.js file located in <code>assets/js</code> using a script tag with defer attribute.</p></div></div></div>"
+            node.outerHTML = "<div class='requireJS'>" + html + " <div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-light'>JavaScript</span><div class='tooltip tooltip-dark'><div class='tooltip-content'><p class='tooltip-title'>Requires JavaScript</p><p class='tooltip-description'>If you plan to use this feature you have to import the framework.js file located in <code>assets/js</code> using a script tag with defer attribute.</p></div></div></div></div>"
         }
     });
 </script>

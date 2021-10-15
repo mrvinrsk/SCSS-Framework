@@ -36,6 +36,7 @@
             <li>The darkening of the background when a popup is open is now stronger.</li>
             <li>Examples are now centered and have more margin at the bottom.</li>
             <li>Sections in the documentation now have more space between.</li>
+            <li>Tooltips now finally have some spacing to their parent element.</li>
         </ul>
     </div>
 
@@ -52,7 +53,7 @@
         </div>
     </div>
 
-    <div class="wrapper bg-error mt-3 mt-lg-6" id="planned">
+    <div class="wrapper bg-info-light mt-5 mt-lg-8" id="planned">
         <p class="heading-large fw-bold"><i class="fas fa-calendar-plus fsi-small"></i>Planned</p>
 
         <div class="blank mt-2 mt-lg-4">

@@ -19,6 +19,7 @@
   .tooltip {
     display: none;
     z-index: 200;
+    background-color: transparent;
 
     max-width: 30vw;
 
@@ -27,35 +28,43 @@
     @extend .px-4;
     @extend .py-2;
 
-    @extend .bg-white-darker;
-    @extend .border-radius-2;
+    .tooltip-content {
+      @extend .px-4;
+      @extend .py-2;
 
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
-    transition-duration: .25s;
+      @extend .bg-white-darker;
+      @extend .border-radius-2;
+
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+      transition-duration: .25s;
 
 
-    .tooltip-title {
-      @extend .fsi-regular;
-      @extend .fc-main-dark;
-      @extend .fs-underline;
-    }
+      .tooltip-title {
+        @extend .fsi-regular;
+        @extend .fc-main-dark;
+        @extend .fs-underline;
+      }
 
-    .tooltip-description {
-      @extend .fsi-small;
-      @extend .fa-justify;
-      @extend .fc-gray;
+      .tooltip-description {
+        @extend .fsi-small;
+        @extend .fa-justify;
+        @extend .fc-gray;
+      }
     }
   }
 
   .tooltip.tooltip-dark {
-    @extend .bg-dark-lighter;
 
-    .tooltip-title {
-      @extend .fc-main-light;
-    }
+    .tooltip-content {
+      @extend .bg-dark-lighter;
 
-    .tooltip-description {
-      @extend .fc-white-darker;
+      .tooltip-title {
+        @extend .fc-main-light;
+      }
+
+      .tooltip-description {
+        @extend .fc-white-darker;
+      }
     }
   }
 }
