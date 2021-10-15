@@ -5,6 +5,7 @@
     <title>Upgrade - Changelog</title>
 
     <link rel="stylesheet" href="../assets/style/CSS/minified/Upgrade.min.css">
+    <link rel="stylesheet" href="../assets/style/CSS/minified/Upgrade.min.css">
     <link rel="stylesheet" href="../assets/style/CSS/minified/changelog.min.css">
 
     <script src="../assets/js/framework.js" defer></script>
