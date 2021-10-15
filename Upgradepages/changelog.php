@@ -35,6 +35,7 @@
             <li>Selections in form-inputs are now finally right colored.</li>
             <li>The darkening of the background when a popup is open is now stronger.</li>
             <li>Examples are now centered and have more margin at the bottom.</li>
+            <li>Sections in the documentation now have more space between.</li>
         </ul>
     </div>
 
@@ -47,6 +48,19 @@
             <p class="blank__title">Nothing</p>
             <p class="blank__description">
                 Nothing was removed in this release.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper bg-error mt-3 mt-lg-6" id="planned">
+        <p class="heading-large fw-bold"><i class="fas fa-calendar-plus fsi-small"></i>Planned</p>
+
+        <div class="blank mt-2 mt-lg-4">
+            <i class="fas fa-times-circle blank__icon fsi-xl"></i>
+
+            <p class="blank__title">Nothing</p>
+            <p class="blank__description">
+                There are no exact plans for future releases...
             </p>
         </div>
     </div>

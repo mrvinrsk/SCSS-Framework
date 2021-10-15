@@ -43,7 +43,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
             <span data-local-href="funfact"></span>
         </section>
 
-        <div class="d-flex flex-d-column gy-5 gy-lg-10">
+        <div class="d-flex flex-d-column gy-6 gy-lg-12">
             <section id="accordions">
                 <div class="mb-2 mb-lg-4">
                     <p class="heading local_redirect" data-local-href="accordions" data-needs-js>
