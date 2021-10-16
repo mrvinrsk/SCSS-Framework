@@ -715,8 +715,35 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
             </section>
 
+            <section id="paths">
+                <div class="mb-2 mb-lg-4">
+                    <p class="heading local_redirect" data-local-href="paths" data-needs-js>Paths</p>
+                    <p class="description">
+                        Used for displaying your current location on the pages structure.
+                    </p>
 
-            <div class="alert-gray-lightest mt-2 mt-lg-5">More documentation soon... 👋</div>
+                    <?php echo getAlert('info', 'You\'re able to change the separator of a path simply by adding <code>data-path-separator=\'SEPERATOR\'</code> to the parent element or adding it to the <code>.path-element</code> BEFORE the element you want it to display (example). Standard: \'/\'') ?>
+                </div>
+
+                <div class="example">
+                    <div class="path" data-path-separator="-">
+                        <a href="#paths" class="path-element">Upgradepages</a>
+                        <a href="#paths" class="path-element">Welcome</a>
+                        <a href="#paths" class="path-element" data-path-separator="#">Documentation</a>
+                        <a href="#paths" class="path-element">Paths</a>
+                    </div>
+                </div>
+
+                <div class="code mt-2 mt-lg-3">
+                <pre><code>&lt;div class="path" data-path-separator="-"&gt;
+    &lt;a href="#paths" class="path-element"&gt;Upgradepages&lt;/a&gt;
+    &lt;a href="#paths" class="path-element" data-path-separator="/"&gt;Welcome&lt;/a&gt;
+    &lt;a href="#paths" class="path-element" data-path-separator="#"&gt;Documentation&lt;/a&gt;
+    &lt;a href="#paths" class="path-element"&gt;Paths&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </section>
+
+
         </div>
     </div>
 </main>
