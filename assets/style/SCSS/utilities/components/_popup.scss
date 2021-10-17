@@ -4,7 +4,7 @@
 @import "../font";
 @import "../layout/breakpoints";
 
-.popup__wrapper {
+.popup-wrapper {
   display: none;
   position: fixed;
   top: 0;
@@ -30,19 +30,19 @@
 
   box-shadow: 0 0 15px rgba(0, 0, 0, .425);
 
-  .popup__title {
+  .popup-title {
     @extend .fsi-regular;
     @extend .fs-underline;
     @extend .fc-main;
     @extend .fw-semibold;
   }
 
-  .popup__description {
+  .popup-description {
     @extend .fsi-small;
     @extend .fa-justify;
   }
 
-  .popup__title + .popup__description {
+  .popup-title + .popup-description {
     @extend .mt-1;
   }
 }

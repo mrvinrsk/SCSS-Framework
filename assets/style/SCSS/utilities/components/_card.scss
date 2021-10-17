@@ -15,7 +15,7 @@
 
   @extend .bg-white-darker;
 
-  .card__image {
+  .card-image {
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
@@ -23,15 +23,15 @@
     @extend .mb-lg-3;
   }
 
-  .card__content {
+  .card-content {
 
-    .card__title {
+    .card-title {
       @extend .heading;
       @extend .fsi-regular;
       margin-bottom: 2px;
     }
 
-    .card__description {
+    .card-description {
       @extend .fa-justify;
       @extend .fsi-small;
       @extend .fc-dark-lighter;
@@ -52,7 +52,7 @@
     }
   }
 
-  .card__links {
+  .card-links {
     @extend .fc-main;
     text-decoration: underline;
 
@@ -64,6 +64,6 @@
   }
 }
 
-.card.card__dark, .card__dark {
+.card.card-dark, .card-dark {
   @extend .fc-dark;
 }

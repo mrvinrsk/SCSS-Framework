@@ -51,7 +51,7 @@ function copyTextToClipboard(text) {
 
 
 /* Accordions */
-var accordionToggles = document.getElementsByClassName("accordion__toggle");
+var accordionToggles = document.getElementsByClassName("accordion-toggle");
 
 for (var i = 0; i < accordionToggles.length; i++) {
     accordionToggles[i].addEventListener('click', function () {

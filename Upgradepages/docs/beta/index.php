@@ -46,11 +46,11 @@ docu-refer: Similar elements
              data-docu-colorable data-docu-needs-js>
             <div class="example">
                 <div class="accordion accordion-main">
-                    <button class="accordion__toggle">Toggle</button>
+                    <button class="accordion-toggle">Toggle</button>
 
-                    <div class="accordion__content">
-                        <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <p class="accordion__description">
+                    <div class="accordion-content">
+                        <p class="accordion-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p class="accordion-description">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
                             illum ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
                         </p>
@@ -94,6 +94,97 @@ docu-refer: Similar elements
             <div class="example">
                 <button class="simple-button-main">Button</button>
                 <a class="simple-button-main">Button via &lt;a&gt;</a>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Card"
+             data-docu-description="A simple design element to display information."
+             data-docu-refer="image-card">
+            <div class="example">
+                <div class="card">
+                    <img src="https://via.placeholder.com/1280x720" class="card-image">
+
+                    <div class="card-content">
+                        <p class="card-title">Lorem ipsum dolor sit.</p>
+                        <p class="card-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+                            officiis?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Diagonal Section"
+             data-docu-description="A simple design element to display information."
+             data-docu-refer="image-card"
+             data-docu-colorable>
+            <div class="example">
+                <div class="diagonal-section-main-dark diagonal-section">
+                    <p class="fsi-larger fw-bold fc-main-lighter fs-underline">Lorem ipsum dolor sit
+                        amet,consectetur.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas repellat
+                        sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
+                        pariatur. Exercitationem omnis reprehenderit suscipit!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Image Card"
+             data-docu-description="A simple design element to display information whose focus lays on the actual image."
+             data-docu-refer="card">
+            <div class="example">
+                <div class="image-card">
+                    <img src="https://via.placeholder.com/1280x720">
+
+                    <p class="image-card-summary">Summary</p>
+
+                    <div class="image-card-slide">
+                        <p class="image-card-slide-title">Lorem ipsum dolor sit amet.</p>
+                        <p class="image-card-slide-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam animi, est
+                            et explicabo possimus qui rerum similique vero?
+                        </p>
+
+                        <div data-local-href="specs" class="mt-1">
+                            <div class="spec">
+                                <p class="spec-key">Key</p>
+                                <p class="spec-value">Value</p>
+                            </div>
+                            <div class="spec">
+                                <p class="spec-key">Key</p>
+                                <p class="spec-value">Value</p>
+                            </div>
+                        </div>
+
+                        <a href="#image-card-link" data-local-href="image-card-link" class="image-card-slide-link">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Popup"
+             data-docu-description="A simple design element to display information whose focus lays on the actual image.">
+            <div class="example">
+                <div class="popup-wrapper" id="demo_popup">
+                    <div class="popup bg-white-darker">
+                        <p class="popup-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p class="fc-dark-light popup-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas
+                            repellat sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero
+                            maiores odit
+                            pariatur. Exercitationem omnis reprehenderit suscipit!
+                        </p>
+
+                        <div class="d-flex flex-j-flex-end">
+                            <button onclick="togglePopup('demo_popup');" class="button-main mt-2">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="togglePopup('demo_popup')" class="button-main">Show Popup</button>
             </div>
         </div>
     </div>
@@ -159,7 +250,7 @@ docu-refer: Similar elements
 
 </script>
 
-<script src="../../../assets/js/framework.js"></script>
+<script src="../../../assets/js/framework.js" defer></script>
 
 </body>
 </html>

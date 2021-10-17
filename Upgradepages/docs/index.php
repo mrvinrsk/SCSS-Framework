@@ -60,11 +60,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="example">
                     <div class="accordion accordion-main">
-                        <button class="accordion__toggle">Toggle</button>
+                        <button class="accordion-toggle">Toggle</button>
 
-                        <div class="accordion__content">
-                            <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
-                            <p class="accordion__description">
+                        <div class="accordion-content">
+                            <p class="accordion-title">Lorem ipsum dolor sit amet, consectetur.</p>
+                            <p class="accordion-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
                                 illum ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis
                                 quas!
@@ -75,11 +75,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="code mt-2 mt-lg-3">
             <pre><code>&lt;div class="accordion accordion-main"&gt;
-    &lt;button class="accordion__toggle"&gt;Toggle&lt;/button&gt;
+    &lt;button class="accordion-toggle"&gt;Toggle&lt;/button&gt;
 
-    &lt;div class="accordion__content"&gt;
-        &lt;p class="accordion__title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
-        &lt;p class="accordion__description"&gt;
+    &lt;div class="accordion-content"&gt;
+        &lt;p class="accordion-title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
+        &lt;p class="accordion-description"&gt;
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
             illum
             ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
@@ -189,20 +189,20 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="example">
                     <div class="card">
-                        <img src="https://via.placeholder.com/1280x720" class="card__image">
+                        <img src="https://via.placeholder.com/1280x720" class="card-image">
 
-                        <div class="card__content">
-                            <p class="card__title">Lorem ipsum dolor sit.</p>
-                            <p class="card__description">
+                        <div class="card-content">
+                            <p class="card-title">Lorem ipsum dolor sit.</p>
+                            <p class="card-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
                                 officiis?
                             </p>
 
                             <hr/>
 
-                            <div class="card__links" data-local-href="card__links">
-                                <a href="#card__links">Link</a>
-                                <a href="#card__links">Link</a>
+                            <div class="card-links" data-local-href="card-links">
+                                <a href="#card-links">Link</a>
+                                <a href="#card-links">Link</a>
                             </div>
                         </div>
                     </div>
@@ -210,11 +210,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="code mt-2 mt-lg-3">
                 <pre><code>&lt;div class="card"&gt;
-    &lt;img src="https://via.placeholder.com/1280x720" class="card__image"&gt;
+    &lt;img src="https://via.placeholder.com/1280x720" class="card-image"&gt;
 
-    &lt;div class="card__content"&gt;
-        &lt;p class="card__title"&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;p class="card__description"&gt;
+    &lt;div class="card-content"&gt;
+        &lt;p class="card-title"&gt;Lorem ipsum dolor sit.&lt;/p&gt;
+        &lt;p class="card-description"&gt;
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
             officiis?
         &lt;/p&gt;
@@ -231,16 +231,16 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                     </p>
 
                     <div class="alert alert-info mt-1 mt-lg-2">
-                        You're able to tint diagonal sections by simply using diagonal_section-COLOR instead of the
+                        You're able to tint diagonal sections by simply using diagonal-section-COLOR instead of the
                         buttons
                         class as seen as
                         in the example below. COLOR has to be a color from Upgrades colorscheme. Furthermore you can add
-                        <code>diagonal_section-invert</code> as a class to invert the skew.
+                        <code>diagonal-section-invert</code> as a class to invert the skew.
                     </div>
                 </div>
 
                 <div class="example">
-                    <div class="diagonal_section-main-dark diagonal_section">
+                    <div class="diagonal-section-main-dark diagonal-section">
                         <p class="fsi-larger fw-bold fc-main-lighter fs-underline">Lorem ipsum dolor sit amet,
                             consectetur.</p>
                         <p>
@@ -253,7 +253,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="code mt-2 mt-lg-3">
-                <pre><code class="language-html">&lt;div class="diagonal_section-main-dark diagonal_section"&gt;
+                <pre><code class="language-html">&lt;div class="diagonal-section-main-dark diagonal-section"&gt;
     &lt;p class="fsi-larger fw-bold fc-main-lighter fs-underline"&gt;Lorem ipsum dolor sit amet,consectetur.&lt;/p&gt;
     &lt;p&gt;
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas repellat
@@ -286,11 +286,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                     <div class="image-card">
                         <img src="https://via.placeholder.com/1280x720">
 
-                        <p class="image-card__summary">Summary</p>
+                        <p class="image-card-summary">Summary</p>
 
-                        <div class="image-card__slide">
-                            <p class="image-card__slide__title">Lorem ipsum dolor sit amet.</p>
-                            <p class="image-card__slide__description">
+                        <div class="image-card-slide">
+                            <p class="image-card-slide-title">Lorem ipsum dolor sit amet.</p>
+                            <p class="image-card-slide-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam animi,
                                 est
                                 et explicabo possimus qui rerum similique vero?
@@ -308,7 +308,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                             </div>
 
                             <a href="#image-card-link" data-local-href="image-card-link"
-                               class="image-card__slide__link">Button</a>
+                               class="image-card-slide-link">Button</a>
                         </div>
                     </div>
                 </div>
@@ -317,11 +317,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 <pre><code>&lt;div class="image-card"&gt;
     &lt;img src="https://via.placeholder.com/1280x720"&gt;
 
-    &lt;p class="image-card__summary"&gt;Summary&lt;/p&gt;
+    &lt;p class="image-card-summary"&gt;Summary&lt;/p&gt;
 
-    &lt;div class="image-card__slide"&gt;
-        &lt;p class="image-card__slide__title"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-        &lt;p class="image-card__slide__description"&gt;
+    &lt;div class="image-card-slide"&gt;
+        &lt;p class="image-card-slide-title"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p class="image-card-slide-description"&gt;
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam animi, est
             et explicabo possimus qui rerum similique vero?
         &lt;/p&gt;
@@ -337,7 +337,7 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
             &lt;/div&gt;
         &lt;/div&gt;
 
-        &lt;a href="#image-card-link" data-local-href="image-card-link" class="image-card__slide__link"&gt;Button&lt;/a&gt;
+        &lt;a href="#image-card-link" data-local-href="image-card-link" class="image-card-slide-link"&gt;Button&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
@@ -352,11 +352,11 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="example">
-                    <div class="popup__wrapper" id="demo_popup">
+                    <div class="popup-wrapper" id="demo_popup">
                         <div class="popup bg-white-darker">
-                            <p class="popup__title">Lorem ipsum dolor sit amet,
+                            <p class="popup-title">Lorem ipsum dolor sit amet,
                                 consectetur.</p>
-                            <p class="fc-dark-light popup__description">
+                            <p class="fc-dark-light popup-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas
                                 repellat
                                 sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores
@@ -374,10 +374,10 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
                 </div>
 
                 <div class="code mt-2 mt-lg-3">
-                <pre><code>&lt;div class="popup__wrapper" data-local-href="demo_popup_"&gt;
+                <pre><code>&lt;div class="popup-wrapper" data-local-href="demo_popup_"&gt;
     &lt;div class="popup bg-white-darker"&gt;
-        &lt;p class="popup__title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
-        &lt;p class="fc-dark-light popup__description"&gt;
+        &lt;p class="popup-title"&gt;Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;
+        &lt;p class="fc-dark-light popup-description"&gt;
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, maiores placeat quas
             repellat sapiente voluptate? Animi consequatur eos eum excepturi facilis ipsum libero maiores odit
             pariatur. Exercitationem omnis reprehenderit suscipit!
@@ -448,17 +448,17 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="example">
                     <div class="card">
-                        <img src="https://via.placeholder.com/1280x720" class="card__image placeholder">
+                        <img src="https://via.placeholder.com/1280x720" class="card-image placeholder">
 
-                        <div class="card__content">
-                            <p class="card__title placeholder"></p>
-                            <p class="card__description placeholder"></p>
+                        <div class="card-content">
+                            <p class="card-title placeholder"></p>
+                            <p class="card-description placeholder"></p>
 
                             <hr/>
 
-                            <div class="card__links" data-local-href="card__links_2">
-                                <a href="#card__links_2" class="placeholder"></a>
-                                <a href="#card__links_2" class="placeholder"></a>
+                            <div class="card-links" data-local-href="card-links_2">
+                                <a href="#card-links_2" class="placeholder"></a>
+                                <a href="#card-links_2" class="placeholder"></a>
                             </div>
                         </div>
                     </div>
@@ -466,17 +466,17 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="code mt-2 mt-lg-3">
                 <pre><code>&lt;div class="card"&gt;
-    &lt;img src="https://via.placeholder.com/1280x720" class="card__image placeholder"&gt;
+    &lt;img src="https://via.placeholder.com/1280x720" class="card-image placeholder"&gt;
 
-    &lt;div class="card__content"&gt;
-        &lt;p class="card__title placeholder"&gt;&lt;/p&gt;
-        &lt;p class="card__description placeholder"&gt;&lt;/p&gt;
+    &lt;div class="card-content"&gt;
+        &lt;p class="card-title placeholder"&gt;&lt;/p&gt;
+        &lt;p class="card-description placeholder"&gt;&lt;/p&gt;
 
         &lt;hr/&gt;
 
-        &lt;div class="card__links" data-local-href="card__links_2"&gt;
-            &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
-            &lt;a href="#card__links_2" class="placeholder"&gt;&lt;/a&gt;
+        &lt;div class="card-links" data-local-href="card-links_2"&gt;
+            &lt;a href="#card-links_2" class="placeholder"&gt;&lt;/a&gt;
+            &lt;a href="#card-links_2" class="placeholder"&gt;&lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -499,10 +499,10 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="example">
                     <div class="blank">
-                        <i class="fas fa-times-circle blank__icon fsi-xl"></i>
+                        <i class="fas fa-times-circle blank-icon fsi-xl"></i>
 
-                        <p class="blank__title mb-2">No Data found</p>
-                        <p class="blank__description">
+                        <p class="blank-title mb-2">No Data found</p>
+                        <p class="blank-description">
                             Oops... based on the data provided, we unfortunately did not find any information.
                         </p>
                     </div>
@@ -510,10 +510,10 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 
                 <div class="code mt-2 mt-lg-3">
                 <pre><code>&lt;div class="blank"&gt;
-    &lt;i class="fas fa-times-circle blank__icon"&gt;&lt;/i&gt;
+    &lt;i class="fas fa-times-circle blank-icon"&gt;&lt;/i&gt;
 
-    &lt;p class="blank__title"&gt;No Data found&lt;/p&gt;
-    &lt;p class="blank__description"&gt;
+    &lt;p class="blank-title"&gt;No Data found&lt;/p&gt;
+    &lt;p class="blank-description"&gt;
         Oops... based on the data provided, we unfortunately did not find any information.
     &lt;/p&gt;
 &lt;/div&gt;</code></pre>

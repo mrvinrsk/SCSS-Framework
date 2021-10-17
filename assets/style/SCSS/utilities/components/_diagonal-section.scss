@@ -2,7 +2,7 @@
 @import "../colors";
 
 $rot: 2.75deg;
-.diagonal_section {
+.diagonal-section {
   position: relative;
   z-index: 5;
 
@@ -13,7 +13,7 @@ $rot: 2.75deg;
   @extend .px-lg-8;
 }
 
-.diagonal_section::before {
+.diagonal-section::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -26,16 +26,16 @@ $rot: 2.75deg;
   transform: skewY($rot);
 }
 
-body .diagonal_section.diagonal_section-invert::before {
+body .diagonal-section.diagonal_section-invert::before {
   transform: skewY(-$rot);
 }
 
 @include eachColor() using($name, $value) {
-  body .diagonal_section-#{$name} {
-    @extend .diagonal_section;
+  body .diagonal-section-#{$name} {
+    @extend .diagonal-section;
   }
 
-  body .diagonal_section-#{$name}::before {
+  body .diagonal-section-#{$name}::before {
     background-color: $value;
   }
 }
