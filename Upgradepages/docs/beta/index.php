@@ -68,7 +68,7 @@ docu-beta: Element is in beta state.
             </div>
         </div>
 
-        <div class="docu-element" data-docu-title="Badges"
+        <div class="docu-element" data-docu-title="Badge"
              data-docu-description="Badges are a great way to display, for example, new features."
              data-docu-colorable>
             <div class="example">
@@ -76,7 +76,7 @@ docu-beta: Element is in beta state.
             </div>
         </div>
 
-        <div class="docu-element" data-docu-title="Buttons"
+        <div class="docu-element" data-docu-title="Button"
              data-docu-description="Badges are a great way to display, for example, new features."
              data-docu-colorable>
             <div class="example">
@@ -84,11 +84,12 @@ docu-beta: Element is in beta state.
             </div>
         </div>
 
-        <div class="docu-element" data-docu-title="Buttons"
+        <div class="docu-element" data-docu-title="Simple Button"
              data-docu-description="Badges are a great way to display, for example, new features."
              data-docu-colorable>
             <div class="example">
-                <button class="button-main">Button</button>
+                <button class="simple-button-main">Button</button>
+                <a class="simple-button-main">Button via &lt;a&gt;</a>
             </div>
         </div>
     </div>
@@ -107,7 +108,7 @@ docu-beta: Element is in beta state.
         var badges = "";
 
         if ("docuColorable" in docuelement.dataset) {
-            badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-success-lighter m-0'>Colorable</span><div class='tooltip tooltip-dark'><div class='tooltip-content'><p class='tooltip-title'>Element is customizable</p><p class='tooltip-description'>You have the option to tint this element. Just use the <code>" + docuelement.dataset.docuTitle.toLowerCase() + "-[color]</code> class instead of the <code>" + docuelement.dataset.docuTitle.toLowerCase() + "</code> class. [Color] corresponds in this case to a color from the color scheme of Upgrade, which is also used for text colors and the like. Example: main-dark</p></div></div></div>";
+            badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-success-lighter m-0'>Colorable</span><div class='tooltip tooltip-dark'><div class='tooltip-content'><p class='tooltip-title'>Element is customizable</p><p class='tooltip-description'>You have the option to tint this element. Just use the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "-[color]</code> class instead of the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "</code> class. [Color] corresponds in this case to a color from the color scheme of Upgrade, which is also used for text colors and the like. Example: main-dark</p></div></div></div>";
         }
         if ("docuNeedsJs" in docuelement.dataset) {
             badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning m-0'>JavaScript</span><div class='tooltip tooltip-dark'><div class='tooltip-content'><p class='tooltip-title'>Requires JavaScript</p><p class='tooltip-description'>If you plan to use this feature you have to import the <code>framework.js</code> file located in <code>assets/js</code> using a script tag with defer attribute.</p></div></div></div>";
