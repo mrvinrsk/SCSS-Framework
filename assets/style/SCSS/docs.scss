@@ -40,6 +40,16 @@ section, .docu-element {
   overflow-x: auto;
 }
 
+.code .copy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: .75rem;
+  background-color: map-get($main, "main");
+  cursor: pointer;
+  border-bottom-left-radius: inherit;
+}
+
 .example {
   border: 2px dashed map-get($main, "main-light");
   display: flex;
@@ -53,6 +63,9 @@ section, .docu-element {
 
 .code {
   @extend .bg-dark-lighter;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
 }
 
 .example::before, .code::before {

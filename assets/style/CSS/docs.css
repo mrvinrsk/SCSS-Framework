@@ -8486,6 +8486,16 @@ section, .docu-element {
   overflow-x: auto;
 }
 
+.code .copy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.75rem;
+  background-color: #fc5102;
+  cursor: pointer;
+  border-bottom-left-radius: inherit;
+}
+
 .example {
   border: 2px dashed #ff6b2d;
   display: flex;
@@ -8494,6 +8504,12 @@ section, .docu-element {
   align-items: center;
   align-content: center;
   background-color: rgba(144, 144, 144, 0.25);
+}
+
+.code {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
 }
 
 .example::before, .code::before {

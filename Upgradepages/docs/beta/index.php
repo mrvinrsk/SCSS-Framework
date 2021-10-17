@@ -39,20 +39,56 @@ docu-beta: Element is in beta state.
         </p>
     </header>
 
-    <div class="docu-element d-flex flex-d-column gy-3 gy-lg-6" data-docu-title="Accordion"
-         data-docu-description="Accordions are simple boxes with a summary and a longer text within it. When you click on an accordion it will open up and show the insides information."
-         data-docu-colorable data-docu-needs-js>
-        <div class="example">
-            <div class="accordion accordion-main">
-                <button class="accordion__toggle">Toggle</button>
+    <div class="d-flex flex-d-column gy-3 gy-lg-6">
+        <div class="docu-element" data-docu-title="Accordion"
+             data-docu-description="Accordions are simple boxes with a summary and a longer text within it. When you click on an accordion it will open up and show the insides information."
+             data-docu-colorable data-docu-needs-js>
+            <div class="example">
+                <div class="accordion accordion-main">
+                    <button class="accordion__toggle">Toggle</button>
 
-                <div class="accordion__content">
-                    <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
-                    <p class="accordion__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
-                        illum ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
-                    </p>
+                    <div class="accordion__content">
+                        <p class="accordion__title">Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p class="accordion__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque debitis eaque eum
+                            illum ipsam laborum magni molestiae odio placeat! Corporis culpa doloremque officiis quas!
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Alert"
+             data-docu-description="Alerts are a practical way to inform the user of your website about completed processes, errors, or similar. "
+             data-docu-colorable>
+            <div class="example">
+                <div class="alert-main">
+                    This is a simple alert! You can use it for barely everything.
+                </div>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Badges"
+             data-docu-description="Badges are a great way to display, for example, new features."
+             data-docu-colorable>
+            <div class="example">
+                <p>Lorem ipsum dolor sit. <span class="badge-warning">New</span></p>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Buttons"
+             data-docu-description="Badges are a great way to display, for example, new features."
+             data-docu-colorable>
+            <div class="example">
+                <button class="button-main">Button</button>
+            </div>
+        </div>
+
+        <div class="docu-element" data-docu-title="Buttons"
+             data-docu-description="Badges are a great way to display, for example, new features."
+             data-docu-colorable>
+            <div class="example">
+                <button class="button-main">Button</button>
             </div>
         </div>
     </div>
@@ -63,6 +99,7 @@ docu-beta: Element is in beta state.
     document.querySelectorAll('div.docu-element').forEach(function (docuelement) {
         docuelement.id = docuelement.dataset.docuTitle.toLowerCase();
         docuelement.dataset.localHref = docuelement.id;
+        docuelement.classList.add("d-flex", "flex-d-column", "gy-3", "gy-lg-6");
         docuelement.innerHTML = '<div><h1 class="heading fsi-smallest"><a href="#' + docuelement.id + '" class="fc-white-darker">#</a> ' + docuelement.dataset.docuTitle + '</h1>' + '<p>' + docuelement.dataset.docuDescription + '</p></div>' + docuelement.innerHTML;
 
         var title = docuelement.querySelector('h1.heading');
@@ -82,7 +119,8 @@ docu-beta: Element is in beta state.
         title.outerHTML = "<div class='d-flex flex-a-center gx-3 gx-lg-6'>" + title.outerHTML + "<div class='d-flex flex-a-center gx-2 gx-lg-3'>" + badges + "</div></div>";
 
         /* Add Example Code */
-        docuelement.innerHTML += "<pre><code class='language-html'>" + document.querySelector('#accordion .example').innerHTML.replaceAll('<', '&lt;').replaceAll('>', '&gt;') + "</code></pre>";
+        docuelement.innerHTML += "<div class='code'><i class='fas fa-copy copy'></i><pre><code class='language-html sc'>" + docuelement.querySelector('.example').innerHTML.replaceAll('<', '&lt;').replaceAll('>', '&gt;') + "</code></pre></div>";
+        // TODO: Fix last empty line.
     });
 </script>
 
@@ -93,6 +131,14 @@ docu-beta: Element is in beta state.
         var pattern = html.match(/\s*\n[\t\s]*/);
         $(this).html(html.replace(new RegExp(pattern, "g"), '\n'));
     });
+
+    document.querySelectorAll('.code .copy').forEach(btn => {
+        btn.addEventListener('click', function () {
+            copyTextToClipboard(btn.parentNode.querySelector('.sc').innerText);
+        })
+    });
+
+
 </script>
 
 <script src="../../../assets/js/framework.js"></script>
