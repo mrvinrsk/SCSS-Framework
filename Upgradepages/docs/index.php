@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <title>Upgrade - Documentation</title>
 
-    <link rel="stylesheet" href="../assets/style/CSS/minified/Upgrade.min.css">
-    <link rel="stylesheet" href="../assets/style/CSS/minified/docs.min.css">
+    <link rel="stylesheet" href="../../assets/style/CSS/minified/Upgrade.min.css">
+    <link rel="stylesheet" href="../../assets/style/CSS/minified/docs.min.css">
 
-    <script src="../assets/js/framework.js" defer></script>
+    <script src="../../assets/js/framework.js" defer></script>
     <script src="https://kit.fontawesome.com/a4ede3fed3.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<?php include_once "./assets/elements/navigator.html";
-
+<?php
 function getAlert($color, $text)
 {
     return "<div class='alert-$color mt-1 mt-lg-2'>$text</div>";
@@ -33,6 +32,8 @@ the example below. [COLOR] has to be a color from Upgrades colorscheme.";
 }
 
 ?>
+
+<a href="./beta/" id="betalink" class="fc-white-darker">Try the new documentation</a>
 
 <main>
     <div class="container-lg my-3 my-lg-10">

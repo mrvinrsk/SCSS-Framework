@@ -195,8 +195,6 @@ document.querySelectorAll('.path').forEach(path => {
             }
 
             el.outerHTML += '<span class="path-separator">' + sep + '</span>';
-        } else {
-            console.log('No Next');
         }
     });
 });

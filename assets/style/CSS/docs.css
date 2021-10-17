@@ -11,7 +11,7 @@
   background-color: #ff6b2d;
 }
 
-.bg-main {
+.bg-main, #betalink {
   background-color: #fc5102;
 }
 
@@ -8457,6 +8457,15 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 section {
   padding: 1rem 1.75rem;
   border-radius: 10px;
+}
+
+#betalink {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 *:target {
