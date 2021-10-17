@@ -8496,6 +8496,16 @@ section, .docu-element {
   border-bottom-left-radius: inherit;
 }
 
+.similarElements {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
 .example {
   border: 2px dashed #ff6b2d;
   display: flex;
@@ -8503,7 +8513,7 @@ section, .docu-element {
   justify-items: center;
   align-items: center;
   align-content: center;
-  background-color: rgba(144, 144, 144, 0.25);
+  background-color: rgba(144, 144, 144, 0.1);
 }
 
 .code {

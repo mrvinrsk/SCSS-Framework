@@ -25,11 +25,12 @@ docu-title: Name of the Element (displayed in documentation as heading).
 docu-description: Description of the Element.
 docu-colorable: Element is colorable.
 docu-beta: Element is in beta state.
+docu-refer: Similar elements
 
 -->
 
-<main class="container-lg">
-    <header class="my-3 my-lg-6">
+<main class="container-lg my-5 my-lg-10">
+    <header class="mb-3 mb-lg-6">
         <h1 class="heading heading-larger fs-underline mb-1 mb-lg-2">Documentation <span
                     class="badge-warning fsi-small">Beta</span></h1>
 
@@ -39,7 +40,7 @@ docu-beta: Element is in beta state.
         </p>
     </header>
 
-    <div class="d-flex flex-d-column gy-3 gy-lg-6">
+    <div class="d-flex flex-d-column gy-5 gy-lg-7">
         <div class="docu-element" data-docu-title="Accordion"
              data-docu-description="Accordions are simple boxes with a summary and a longer text within it. When you click on an accordion it will open up and show the insides information."
              data-docu-colorable data-docu-needs-js>
@@ -76,8 +77,10 @@ docu-beta: Element is in beta state.
             </div>
         </div>
 
-        <div class="docu-element" data-docu-title="Button"
+        <div class="docu-element"
+             data-docu-title="Button"
              data-docu-description="Badges are a great way to display, for example, new features."
+             data-docu-refer="simple-button button"
              data-docu-colorable>
             <div class="example">
                 <button class="button-main">Button</button>
@@ -86,6 +89,7 @@ docu-beta: Element is in beta state.
 
         <div class="docu-element" data-docu-title="Simple Button"
              data-docu-description="Badges are a great way to display, for example, new features."
+             data-docu-refer="button"
              data-docu-colorable>
             <div class="example">
                 <button class="simple-button-main">Button</button>
@@ -98,12 +102,12 @@ docu-beta: Element is in beta state.
 <script>
     /* Actual JS */
     document.querySelectorAll('div.docu-element').forEach(function (docuelement) {
-        docuelement.id = docuelement.dataset.docuTitle.toLowerCase();
-        docuelement.dataset.localHref = docuelement.id;
-        docuelement.classList.add("d-flex", "flex-d-column", "gy-3", "gy-lg-6");
-        docuelement.innerHTML = '<div><h1 class="heading fsi-smallest"><a href="#' + docuelement.id + '" class="fc-white-darker">#</a> ' + docuelement.dataset.docuTitle + '</h1>' + '<p>' + docuelement.dataset.docuDescription + '</p></div>' + docuelement.innerHTML;
+        var id = docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-');
+        docuelement.id = id;
+        docuelement.classList.add("d-flex", "flex-d-column", "gy-5", "gy-lg-7");
+        docuelement.innerHTML = '<div><h1 class="fc-main fw-bold fsi-large"><a href="#' + id + '" class="fc-white-darker">#</a> ' + docuelement.dataset.docuTitle + '</h1>' + '<p>' + docuelement.dataset.docuDescription + '</p></div>' + docuelement.innerHTML;
 
-        var title = docuelement.querySelector('h1.heading');
+        var title = docuelement.querySelector('h1');
 
         var badges = "";
 
@@ -122,6 +126,19 @@ docu-beta: Element is in beta state.
         /* Add Example Code */
         docuelement.innerHTML += "<div class='code'><i class='fas fa-copy copy'></i><pre><code class='language-html sc'>" + docuelement.querySelector('.example').innerHTML.replaceAll('<', '&lt;').replaceAll('>', '&gt;') + "</code></pre></div>";
         // TODO: Fix last empty line.
+
+        /* Add Referings */
+        if ("docuRefer" in docuelement.dataset) {
+            var similar = "<div><h2 class='fc-main-light fw-semibold fsi-small'>Related Elements</h2><ul class='similarElements'>";
+
+            docuelement.dataset.docuRefer.split(' ').forEach(refer => {
+                similar += "<li><a href='#" + refer + "' class='badge-main-light m-0'>" + refer + "</a></li>";
+            });
+
+            similar += "</ul></div>";
+
+            docuelement.innerHTML += similar;
+        }
     });
 </script>
 

@@ -50,6 +50,16 @@ section, .docu-element {
   border-bottom-left-radius: inherit;
 }
 
+.similarElements {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: .4rem;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+}
+
 .example {
   border: 2px dashed map-get($main, "main-light");
   display: flex;
@@ -58,7 +68,7 @@ section, .docu-element {
   align-items: center;
   align-content: center;
 
-  background-color: transparentize(map-get($gray, "gray-light"), .75);
+  background-color: transparentize(map-get($gray, "gray-light"), .9);
 }
 
 .code {
