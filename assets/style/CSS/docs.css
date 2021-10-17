@@ -47,7 +47,7 @@
   background-color: #909090;
 }
 
-.bg-gray, section {
+.bg-gray, section, .docu-element {
   background-color: #323232;
 }
 
@@ -454,7 +454,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
   margin-right: 1.095rem;
 }
 
-.mb-3, .example, .my-3 {
+.mb-3, .my-3 {
   margin-bottom: 1.095rem;
 }
 
@@ -4059,7 +4059,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
     margin-right: 2.92rem;
   }
 
-  .mb-lg-6, .example {
+  .mb-lg-6 {
     margin-bottom: 2.92rem;
   }
 
@@ -8454,7 +8454,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
   font-weight: bold;
 }
 
-section {
+section, .docu-element {
   padding: 1rem 1.75rem;
   border-radius: 10px;
 }
@@ -8469,11 +8469,7 @@ section {
 }
 
 *:target {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
-  animation-name: targetFade;
-  animation-duration: 2.5s;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
+  border: 3px solid #fc5102;
 }
 
 .requireJS {
@@ -8482,14 +8478,6 @@ section {
   column-gap: 1rem;
 }
 
-@keyframes targetFade {
-  0% {
-    border: 3px solid #fc5102;
-  }
-  100% {
-    border: 3px solid rgba(0, 0, 0, 0);
-  }
-}
 .example, .code {
   position: relative;
   width: 100%;

@@ -108,13 +108,6 @@ if (obfs.length >= 1) {
     updateObfuscation();
 }
 
-
-/*var redirects = document.getElementsByClassName('local_redirect');
-for (var o = 0; o < redirects.length; o++) {
-    var red = redirects[o];
-    red.innerHTML = "<a href='#" + red.dataset.localHref + "'><span>#</span></a> " + red.innerText;
-}*/
-
 document.querySelectorAll('.local_redirect').forEach(redirect => {
     redirect.innerHTML = "<a href='#" + redirect.dataset.localHref + "'><span>#</span></a> " + redirect.innerText;
 });
